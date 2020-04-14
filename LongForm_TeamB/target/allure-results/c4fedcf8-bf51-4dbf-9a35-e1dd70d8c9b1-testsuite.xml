@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1586796825659" stop="1586797297884" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Suite : Testclasess</name>
+    <title>Suite : Testclasess</title>
+    <test-cases>
+        <test-case start="1586796825662" stop="1586797081523" status="passed">
+            <name>wopEpisodeVersionCreation</name>
+            <title>WOP Episode version Creation</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Testclasess"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.WOPEpisodeVersionTest"/>
+                <label name="testMethod" value="wopEpisodeVersionCreation"/>
+                <label name="story" value="WOP"/>
+                <label name="feature" value="Long Form Data Integration"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="14504@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1586797081527" stop="1586797199758" status="passed">
+            <name>mpLaunchAndLoginTest</name>
+            <title>MP Login and Launch</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Testclasess"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.MP_launchAndLogin"/>
+                <label name="testMethod" value="mpLaunchAndLoginTest"/>
+                <label name="story" value="MP"/>
+                <label name="feature" value="Long Form Data Integration"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="14504@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1586797199761" stop="1586797295865" status="passed">
+            <name>MPEpisodeVersionTest</name>
+            <title>WOP to MP Integration</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Testclasess"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.MPEpisodeVerstionTest"/>
+                <label name="testMethod" value="MPEpisodeVersionTest"/>
+                <label name="story" value="MP"/>
+                <label name="feature" value="Long Form Data Integration"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="14504@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1586797295868" stop="1586797297869" status="passed">
+            <name>WOPtoMPEpisodeDataTest</name>
+            <title>WOP to MP Episode Data Validations</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Testclasess"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.WOP_MPComparisionTest"/>
+                <label name="testMethod" value="WOPtoMPEpisodeDataTest"/>
+                <label name="story" value="MP"/>
+                <label name="feature" value="Long Form Data Integration"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="14504@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

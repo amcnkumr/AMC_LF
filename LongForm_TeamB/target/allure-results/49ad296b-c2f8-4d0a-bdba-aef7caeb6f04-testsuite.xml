@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1586796825112" stop="1586797298199" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1586796825662" stop="1586797081523" status="passed">
+            <name>wopEpisodeVersionCreation</name>
+            <title>WOP Episode version Creation</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Testclasess"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.WOPEpisodeVersionTest"/>
+                <label name="testMethod" value="wopEpisodeVersionCreation"/>
+                <label name="story" value="WOP"/>
+                <label name="feature" value="Long Form Data Integration"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="14504@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
