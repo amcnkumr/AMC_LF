@@ -27,23 +27,40 @@ public class RecordLocatorTest extends TxBase {
 	
 	public void recordSearchField() throws Throwable {
 		
-		/*//if(WOPEpisodeVersion.Execution.equalsIgnoreCase("Fail")) {
+       if(WOPEpisodeVersion.Execution.equalsIgnoreCase("Fail")) {
 			
 			logStep("WOP is Not Up and Running");
 			
 			Assert.fail("WOP is Not Up and Running");
 			
-		//}else {
-		*/
+		}else {
+		
 
 		recordLocator = PageFactory.initElements(driverWOP, RecordLocatorObjects.class);
 		
 		recordLocator.recordLocatorSelection();
 		
 		recordLocator.recordSearchField();
+		
+		recordLocator.portalMetaDataScreen("ExpectedSegments:","Expected Number of Segments");
+		
+		recordLocator.portalMetaDataScreen("ExpectedScanType:","Scan Type Expected");
+		
+		recordLocator.portalMetaDataScreen("ExpectedFrameRate:","Frame Rate Expected");
+		
+		recordLocator.portalMetaDataScreen("ExpectedAspectRatio:","Aspect Ratio Expected");
+
+		recordLocator.portalMetaDataScreen("ExpectedVideoCodec:","Codec Expected");
+		
+		recordLocator.portalMetaDataScreen("ExpectedFormat:","Format Expected");
+		
+		recordLocator.portalMetaDataScreen("EstimatedTRT:","Expected TRT");
+
+
+
 
 	}
     
 	
 	}
-//}
+}

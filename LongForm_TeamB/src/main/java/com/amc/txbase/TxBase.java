@@ -65,7 +65,7 @@ public class TxBase {
 	
 	public static ArrayList<String> mpEpisodeVersionData = new ArrayList<String>();
 	
-	
+	public static ArrayList<String> portalEpisodeVersionData = new ArrayList<String>();
 
 	
 	// Allure Generator
@@ -113,6 +113,18 @@ public class TxBase {
 				
 		}
 
+		public void portalEpisodeVersionData(String field) {
+			
+			portalEpisodeVersionData.add(field);
+					
+			 for(int i=0; i<portalEpisodeVersionData.size(); i++) {
+				 
+		     System.out.println("Portal Episode Verison Data :" + portalEpisodeVersionData.get(i));
+						
+			 }			
+				
+		}
+		
 		
 		// Switching to the record locator first frame
 
@@ -374,7 +386,14 @@ public class TxBase {
 		screen.type("c", KeyModifier.CTRL);	
 		Thread.sleep(2000);
 		textvalue = (String) Toolkit.getDefaultToolkit().getSystemClipboard().getData(DataFlavor.stringFlavor);	
+		
+		if(textvalue.contains("1:30:00.__")) {
+			
+			textvalue = textvalue.replace(".__", "");
+		}
+		
 		System.out.println("The Value is : " + textvalue);
+		
 		return textvalue;
 		
 	
@@ -406,6 +425,7 @@ public class TxBase {
 		Pattern ProdSearchView = fileReaders(ImagePath);
 		screen.wait(ProdSearchView, waitTime);
 		screen.doubleClick(ProdSearchView);
+		
 	}
 
 	// Image Rightclick using Sikuli
@@ -485,11 +505,11 @@ public class TxBase {
 	
 	public void Clickenter() {
 		
-		screen.wait((double) 2.0);
+		screen.wait((double) 1.0);
 		
 		screen.type(Keys.ENTER);
 		
-		screen.wait((double) 2.0);
+		screen.wait((double) 1.0);
 	}
 	
 	

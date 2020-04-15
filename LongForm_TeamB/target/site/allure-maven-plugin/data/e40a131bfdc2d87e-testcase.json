@@ -1,0 +1,125 @@
+{
+  "uid" : "e40a131bfdc2d87e",
+  "name" : "wopEpisodeVersionCreation",
+  "title" : "WOP Episode version Creation",
+  "time" : {
+    "start" : 1586930952258,
+    "stop" : 1586931124890,
+    "duration" : 172632
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 4
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "1407ccf5bca621b0",
+    "name" : "Suite : Testclasess",
+    "title" : "Suite : Testclasess"
+  },
+  "steps" : [ {
+    "name" : "logStep[Episode Verison Creation is Success]",
+    "title" : "Episode Verison Creation is Success",
+    "time" : {
+      "start" : 1586931043876,
+      "stop" : 1586931043878,
+      "duration" : 2
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Created Media Asset In WOP Business System:Automation_LF prototype]",
+    "title" : "Created Media Asset In WOP Business System:Automation_LF prototype",
+    "time" : {
+      "start" : 1586931096847,
+      "stop" : 1586931096847,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Waited 120 Seconds For WOP Services UP And Run ]",
+    "title" : "Waited 120 Seconds For WOP Services UP And Run ",
+    "time" : {
+      "start" : 1586931096848,
+      "stop" : 1586931096848,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[WOP Services Up And Running :RLA177304.2]",
+    "title" : "WOP Services Up And Running :RLA177304.2",
+    "time" : {
+      "start" : 1586931098850,
+      "stop" : 1586931098850,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "testGroup",
+    "value" : "Testclasess"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "thread",
+    "value" : "26504@MONO-HYD-LAP-41.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Testclasess"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Testclasess"
+  }, {
+    "name" : "testClass",
+    "value" : "com.amc.Testclasess.execute.WOPEpisodeVersionTest"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "testMethod",
+    "value" : "wopEpisodeVersionCreation"
+  }, {
+    "name" : "story",
+    "value" : "WOP"
+  }, {
+    "name" : "host",
+    "value" : "MONO-HYD-LAP-41"
+  }, {
+    "name" : "feature",
+    "value" : "Long Form Data Integration"
+  } ],
+  "parameters" : [ ]
+}

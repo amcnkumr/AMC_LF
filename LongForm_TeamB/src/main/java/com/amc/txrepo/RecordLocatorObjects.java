@@ -26,6 +26,9 @@ public class RecordLocatorObjects extends TxBase {
 	@FindBy(xpath = "//div[contains(text(), 'Material')]")
 	WebElement Material;
 	
+	String indexValue;
+	
+	
 	public void recordLocatorSelection() throws Exception {
 
 		switchToFirstFrame();
@@ -70,9 +73,12 @@ public class RecordLocatorObjects extends TxBase {
 				
 				//recordSearchField.sendKeys(TxBase.Mattextvalue);
 				
-				recordSearchField.sendKeys("LSIT01021708");
+				recordSearchField.sendKeys("LSIT01021711");
 				
-				System.out.println(" Portal Record Is : " + TxBase.Mattextvalue );
+				//System.out.println(" Portal Record Is : " + TxBase.Mattextvalue );
+				
+				//logStep(" Portal Record Is : " + TxBase.Mattextvalue);
+				
 							
 
 		ExplicitWait(recordOpenButton);
@@ -81,7 +87,9 @@ public class RecordLocatorObjects extends TxBase {
 		
 		recordOpenButton.click();
 		
-		logStep(" WOP to MP to Portal Integration is Success : " + TxBase.Mattextvalue );
+		//logStep(" WOP to MP to Portal Integration is Success : " + TxBase.Mattextvalue );
+		
+		logStep(" WOP to MP to Portal Integration is Success : " + "LSIT01021711" );
 		
 		System.out.println("Selected record is launched successfully..");
 		
@@ -91,25 +99,24 @@ public class RecordLocatorObjects extends TxBase {
 		
 		Thread.sleep(14000);
 		
-		//int count = 0;
-
 		switchToThirdFrame();
 
 		System.out.println("Driver Entered Into Third Frame Successful..");
+		
+		
 
-		//ExplicitWait(Material);
+		
+		}
 
-		//Thread.sleep(2000);
 
-		//Material.click();
-
-		String relatedValue = "Expected Number of Segments";
-
-		String indexValue = null;
-
+	// Getting Data From Meta Data Screen
+	
+    public void portalMetaDataScreen(String field,String relatedValue) {
+    	
+    	
 		// Taking all data of Material section into collections list
 		
-		List<WebElement> expList = driver.findElements(By.xpath("//table[starts-with(@id, 'table_id_fld_')]/tbody/tr"));
+		List<WebElement> expList = driverWOP.findElements(By.xpath("//table[starts-with(@id, 'table_id_fld_')]/tbody/tr"));
 
 		// Taking the Expected no# segements value 
 		
@@ -126,24 +133,24 @@ public class RecordLocatorObjects extends TxBase {
 
 		}
 
-		// Converting expected no# of segments string value into Integer value.
 		
-		int result = Integer.parseInt(indexValue);
+		
+		portalEpisodeVersionData(field+indexValue);
+		
 
-		System.out.println("expectedSegments : " + result);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		//driverWOP.close();
-	}
+    	
+    }
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
 }

@@ -1,17 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="104980" started-at="2020-04-14T09:11:09Z" finished-at="2020-04-14T09:12:54Z">
+  <suite name="Suite" duration-ms="659896" started-at="2020-04-15T06:09:12Z" finished-at="2020-04-15T06:20:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="104980" started-at="2020-04-14T09:11:09Z" finished-at="2020-04-14T09:12:54Z">
-      <class name="com.amc.testcases.DynamicTestNG">
-        <test-method status="PASS" signature="ExecuteScripts()[pri:0, instance:com.amc.testcases.DynamicTestNG@40ef3420]" name="ExecuteScripts" duration-ms="104949" started-at="2020-04-14T09:11:09Z" finished-at="2020-04-14T09:12:54Z">
+    <test name="Testclasess" duration-ms="659896" started-at="2020-04-15T06:09:12Z" finished-at="2020-04-15T06:20:12Z">
+      <class name="com.amc.Testclasess.execute.MP_launchAndLogin">
+        <test-method status="PASS" signature="mpLaunchAndLoginTest()[pri:0, instance:com.amc.Testclasess.execute.MP_launchAndLogin@6a94ccde]" name="mpLaunchAndLoginTest" duration-ms="125689" started-at="2020-04-15T06:12:04Z" finished-at="2020-04-15T06:14:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ExecuteScripts -->
-      </class> <!-- com.amc.testcases.DynamicTestNG -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- mpLaunchAndLoginTest -->
+      </class> <!-- com.amc.Testclasess.execute.MP_launchAndLogin -->
+      <class name="com.amc.Testclasess.execute.WOP_MPComparisionTest">
+        <test-method status="PASS" signature="WOPtoMPEpisodeDataTest()[pri:0, instance:com.amc.Testclasess.execute.WOP_MPComparisionTest@37bdd4b1]" name="WOPtoMPEpisodeDataTest" duration-ms="2008" started-at="2020-04-15T06:15:43Z" finished-at="2020-04-15T06:15:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WOPtoMPEpisodeDataTest -->
+      </class> <!-- com.amc.Testclasess.execute.WOP_MPComparisionTest -->
+      <class name="com.amc.Testclasess.execute.MPEpisodeVerstionTest">
+        <test-method status="PASS" signature="MPEpisodeVersionTest()[pri:0, instance:com.amc.Testclasess.execute.MPEpisodeVerstionTest@7261773c]" name="MPEpisodeVersionTest" duration-ms="93398" started-at="2020-04-15T06:14:10Z" finished-at="2020-04-15T06:15:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MPEpisodeVersionTest -->
+      </class> <!-- com.amc.Testclasess.execute.MPEpisodeVerstionTest -->
+      <class name="com.amc.Testclasess.execute.RecordLocatorTest">
+        <test-method status="PASS" signature="recordSearchField()[pri:0, instance:com.amc.Testclasess.execute.RecordLocatorTest@29d8d7a9]" name="recordSearchField" duration-ms="74028" started-at="2020-04-15T06:18:51Z" finished-at="2020-04-15T06:20:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordSearchField -->
+      </class> <!-- com.amc.Testclasess.execute.RecordLocatorTest -->
+      <class name="com.amc.Testclasess.execute.WOPEpisodeVersionTest">
+        <test-method status="PASS" signature="wopEpisodeVersionCreation()[pri:0, instance:com.amc.Testclasess.execute.WOPEpisodeVersionTest@33a267f]" name="wopEpisodeVersionCreation" duration-ms="172631" started-at="2020-04-15T06:09:12Z" finished-at="2020-04-15T06:12:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wopEpisodeVersionCreation -->
+      </class> <!-- com.amc.Testclasess.execute.WOPEpisodeVersionTest -->
+      <class name="com.amc.Testclasess.execute.DataBaseTest">
+        <test-method status="PASS" signature="DataBaseConnectionTest()[pri:0, instance:com.amc.Testclasess.execute.DataBaseTest@9b8d3db]" name="DataBaseConnectionTest" duration-ms="4390" started-at="2020-04-15T06:20:07Z" finished-at="2020-04-15T06:20:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DataBaseConnectionTest -->
+      </class> <!-- com.amc.Testclasess.execute.DataBaseTest -->
+      <class name="com.amc.Testclasess.execute.WOP_PortalComparisionTest">
+        <test-method status="PASS" signature="WOPtoPortalEpisodeDataTest()[pri:0, instance:com.amc.Testclasess.execute.WOP_PortalComparisionTest@50798d39]" name="WOPtoPortalEpisodeDataTest" duration-ms="2004" started-at="2020-04-15T06:20:05Z" finished-at="2020-04-15T06:20:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WOPtoPortalEpisodeDataTest -->
+      </class> <!-- com.amc.Testclasess.execute.WOP_PortalComparisionTest -->
+      <class name="com.amc.Testclasess.execute.PortalLoginTest">
+        <test-method status="PASS" signature="PortalLogin()[pri:0, instance:com.amc.Testclasess.execute.PortalLoginTest@656605e7]" name="PortalLogin" duration-ms="185723" started-at="2020-04-15T06:15:45Z" finished-at="2020-04-15T06:18:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PortalLogin -->
+      </class> <!-- com.amc.Testclasess.execute.PortalLoginTest -->
+    </test> <!-- Testclasess -->
+  </suite> <!-- Suite -->
 </testng-results>

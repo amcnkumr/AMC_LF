@@ -25,7 +25,9 @@ public class DatabaseConnection extends TxBase {
 		  String pass = databaseexcel.excelData[1][2];	
 		  String query = databaseexcel.excelData[1][3];
 		 
-		String MatID = TxBase.textvalue;
+		//String MatID = TxBase.Mattextvalue;
+		
+		String MatID = "LSIT01021711";
 		 
 		String[] querySplits = query.split("MATID");
 

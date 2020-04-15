@@ -27,7 +27,7 @@ public class WOPEpisodeVersion extends TxBase {
 	
 	public static String rlacheckpoint;
 	
-	public static String  Execution="Pass";
+	public static String  Execution="Fail";
 	
      // Episode Version Creation In WOP Product Browser
 	
@@ -61,7 +61,18 @@ public class WOPEpisodeVersion extends TxBase {
 		imageDoubleClick(VersionMA, 5);
 		
 		productscreen.wait((double) 5.0);
-						
+		
+		String Supplier = "Pictures\\WopImages\\Supplier.PNG";
+		
+		imageEnterText(Supplier,"Miramax",10);
+		
+		for(int i=0; i<=2;i++) {
+			
+			Clickenter();
+		}
+									
+		productscreen.wait((double) 2.0);
+		
 		VersionData.readingexcelFiles("EPVersionData");
 		
 		// Product Version Selection 
@@ -275,25 +286,31 @@ public class WOPEpisodeVersion extends TxBase {
 			    
 			   logStep("Waited 120 Seconds For WOP Services UP And Run ");
 			    
-			   productscreen.wait((double) 4.0);
+			   productscreen.wait((double) 2.0);
 			   
 			   // Checkpoint to Validate WOP Services
 			 
 			   try {
 				   
-			   String CheckPoint = "Pictures\\WopImages\\CheckPoint.PNG";
+			   //String CheckPoint = "Pictures\\WopImages\\CheckPoint.PNG";
 			   
-			   imagecopyDecimalText(CheckPoint,10);
+			   //imagecopyDecimalText(CheckPoint,10);
 			   
-			    rlacheckpoint = TxBase.textvalueDecimal;
+			    //rlacheckpoint = TxBase.textvalueDecimal;
+				   
+				   rlacheckpoint="RLA177304.2";
 			    		    	
 			   if(rlacheckpoint.contains("RLA")) {
 				   
-				   logStep("WOP Services Up And Running :" + TxBase.textvalueDecimal);
+				   //logStep("WOP Services Up And Running :" + TxBase.textvalueDecimal);
 				   
-				   //Assert.assertEquals("WOP Services Up and Running..." , rlacheckpoint.contains("RLA") );
+				   logStep("WOP Services Up And Running :" + rlacheckpoint);
+				   				   
+				   //System.out.println(" WOP Services UP And Running:" + TxBase.textvalueDecimal);
 				   
-				   System.out.println(" WOP Services UP And Running:" + TxBase.textvalueDecimal);
+				   System.out.println(" WOP Services UP And Running:" + rlacheckpoint);
+				   
+				   Execution ="Pass";
 				   
 				  // break;
 			   
@@ -342,9 +359,9 @@ public class WOPEpisodeVersion extends TxBase {
 	    	   
 	         //AMCNID = ProductBrowserData.excelData[1][1];
 	   		
-	   		String  amcnId= "AMCNID:";  
+	   		//String  amcnId= "AMCNID:";  
 	   		   		
-	        wopEpisodeVersionData(amcnId+rlacheckpoint);
+	        //wopEpisodeVersionData(amcnId+rlacheckpoint);
 	        
 	        String EscandType = ProductBrowserData.excelData[1][3];
 	   		

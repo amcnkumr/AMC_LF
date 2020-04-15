@@ -24,27 +24,14 @@ public static ArrayList<String> one = new ArrayList<String>();
 	@Test
 	public void dryRun() throws HeadlessException, FindFailed, UnsupportedFlavorException, IOException, InterruptedException {
 		
-		try {
-		 
-			value = "A";
-			 
-		if(value.contains("RLA")) {
-			
-			System.out.println("HIiiii");
-		}else {
-			
-			Execution ="Fail";
-		}
+		String Supplier = "Pictures\\WopImages\\Supplier.PNG";
 		
-		}
+		imageEnterText(Supplier,"Miramax",10);
 		
-		catch(Exception e) {
-			   
-			   System.out.println(e.getMessage());
-			   
-			   Execution ="Fail";
-				   
-			   }
+		for(int i=0; i<=2;i++) {
+			
+			Clickenter();
+		}
 		
 	}
 

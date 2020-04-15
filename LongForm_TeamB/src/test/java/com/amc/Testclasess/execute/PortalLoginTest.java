@@ -28,13 +28,13 @@ public class PortalLoginTest extends TxBase {
 	@Test
 	public void PortalLogin() throws Exception {
 			
-		/*if(WOPEpisodeVersion.Execution.equalsIgnoreCase("Fail")) {
+		if(WOPEpisodeVersion.Execution.equalsIgnoreCase("Fail")) {
 			
 			logStep("WOP is Not Up and Running");
 			
 			Assert.fail("WOP is Not Up and Running");
 			
-		}else {*/
+		}else {
 		
 		
 		Thread.sleep(20000);
@@ -51,4 +51,4 @@ public class PortalLoginTest extends TxBase {
 	
 	}
 	
-//}
+}

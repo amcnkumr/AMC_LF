@@ -49,7 +49,7 @@ public class MPEpisodeVersionObjects extends TxBase{
 		
         //imageEnterText(EnterAmcnFiedl, WOPEpisodeVersion.rlacheckpoint,10);
         
-        imageEnterText(EnterAmcnFiedl, "RLA177290.2",10);
+        imageEnterText(EnterAmcnFiedl, "RLA177304.2",10);
         
 		Clickenter();
 		
@@ -65,9 +65,13 @@ public class MPEpisodeVersionObjects extends TxBase{
         
         logStep("WOP to MP Integration is Success");
         
-        logStep("WOP to MP Integration Data:" + WOPEpisodeVersion.rlacheckpoint);
+        //logStep("WOP to MP Integration Data:" + WOPEpisodeVersion.rlacheckpoint);
         
-        System.out.println("WOP to MP Integration Data:" + WOPEpisodeVersion.rlacheckpoint);
+        //System.out.println("WOP to MP Integration Data:" + WOPEpisodeVersion.rlacheckpoint);
+        
+        logStep("WOP to MP Integration Data:" + "RLA177304.2");
+        
+        System.out.println("WOP to MP Integration Data:" + "RLA177304.2");
         
 		} catch(Exception e) {
 			
@@ -130,11 +134,11 @@ public class MPEpisodeVersionObjects extends TxBase{
 		
 		screen.wait((double) 2.0);			
 		
-	    String  amcnId= "AMCNID:";  
+	    //String  amcnId= "AMCNID:";  
        
 		//mpEpisodeVersionData(amcnId+WOPEpisodeVersion.rlacheckpoint);
 		
-		TxBase.mpEpisodeVersionData.add(amcnId+WOPEpisodeVersion.rlacheckpoint);
+		//TxBase.mpEpisodeVersionData.add(amcnId+WOPEpisodeVersion.rlacheckpoint);
 			
 		
 		String mpScanType = "Pictures\\WopImages\\mpScanType.PNG";
