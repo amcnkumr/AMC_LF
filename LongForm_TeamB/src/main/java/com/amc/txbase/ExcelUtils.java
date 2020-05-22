@@ -22,6 +22,16 @@ public class ExcelUtils extends TxBase {
 	public XSSFSheet sheet;
 	public XSSFRow row = null;
 	public XSSFCell cell = null;
+	
+	//===============
+	
+	/*public static XSSFWorkbook workbook;
+	public XSSFSheet sheet;
+	public XSSFRow row = null;
+	public XSSFCell cell = null;*/
+	
+	
+	//===============
 	public String[][] excelData = null;
 	public int colCount = 0;
 	public int rowCount = 0;

@@ -1,17 +1,17 @@
 {
   "time" : {
-    "start" : 1586930952258,
-    "stop" : 1586931612144,
-    "duration" : 659886
+    "start" : 1590128995857,
+    "stop" : 1590129794648,
+    "duration" : 798791
   },
   "testSuites" : [ {
-    "uid" : "7a347f9067ffa80c",
+    "uid" : "d5c592c680cf11da",
     "name" : "Suite : Test",
     "title" : "Suite : Test",
     "time" : {
-      "start" : 1586930952258,
-      "stop" : 1586931124890,
-      "duration" : 172632
+      "start" : 1590128995857,
+      "stop" : 1590129107096,
+      "duration" : 111239
     },
     "statistic" : {
       "total" : 1,
@@ -23,29 +23,29 @@
     },
     "description" : null,
     "testCases" : [ {
-      "uid" : "db74bfed29eab489",
-      "name" : "wopEpisodeVersionCreation",
-      "title" : "WOP Episode version Creation",
+      "uid" : "317b53c306e40b9f",
+      "name" : "PortalLogin",
+      "title" : "Portal Login And Launch ",
       "time" : {
-        "start" : 1586930952258,
-        "stop" : 1586931124890,
-        "duration" : 172632
+        "start" : 1590128995857,
+        "stop" : 1590129107096,
+        "duration" : 111239
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     } ]
   }, {
-    "uid" : "1407ccf5bca621b0",
+    "uid" : "23aa8aec2d4e193c",
     "name" : "Suite : Testclasess",
     "title" : "Suite : Testclasess",
     "time" : {
-      "start" : 1586930952258,
-      "stop" : 1586931612144,
-      "duration" : 659886
+      "start" : 1590128995857,
+      "stop" : 1590129794648,
+      "duration" : 798791
     },
     "statistic" : {
-      "total" : 8,
-      "passed" : 8,
+      "total" : 7,
+      "passed" : 7,
       "pending" : 0,
       "canceled" : 0,
       "failed" : 0,
@@ -53,90 +53,79 @@
     },
     "description" : null,
     "testCases" : [ {
-      "uid" : "e40a131bfdc2d87e",
-      "name" : "wopEpisodeVersionCreation",
-      "title" : "WOP Episode version Creation",
-      "time" : {
-        "start" : 1586930952258,
-        "stop" : 1586931124890,
-        "duration" : 172632
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "adacaf5b711290b1",
-      "name" : "mpLaunchAndLoginTest",
-      "title" : "MP Login and Launch",
-      "time" : {
-        "start" : 1586931124899,
-        "stop" : 1586931250587,
-        "duration" : 125688
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "666b92c72c0c9e72",
-      "name" : "MPEpisodeVersionTest",
-      "title" : "WOP to MP Integration",
-      "time" : {
-        "start" : 1586931250589,
-        "stop" : 1586931343986,
-        "duration" : 93397
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "629ff5500ef83c8",
-      "name" : "WOPtoMPEpisodeDataTest",
-      "title" : "WOP to MP Episode Data Validations",
-      "time" : {
-        "start" : 1586931343989,
-        "stop" : 1586931345995,
-        "duration" : 2006
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "407a41fe7b80c783",
+      "uid" : "168ce140bf1bc8a",
       "name" : "PortalLogin",
       "title" : "Portal Login And Launch ",
       "time" : {
-        "start" : 1586931345997,
-        "stop" : 1586931531719,
-        "duration" : 185722
+        "start" : 1590128995857,
+        "stop" : 1590129107096,
+        "duration" : 111239
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "d50852dba2915f6d",
+      "uid" : "c63427b4aa6ebe9b",
+      "name" : "wopEpisodeVersionCreation",
+      "title" : "WOP Episode version Creation",
+      "time" : {
+        "start" : 1590129107103,
+        "stop" : 1590129485190,
+        "duration" : 378087
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "aa2da98a76623b0a",
+      "name" : "MPEpisodeVersionTest",
+      "title" : "WOP to MP Integration",
+      "time" : {
+        "start" : 1590129485193,
+        "stop" : 1590129738679,
+        "duration" : 253486
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ebcc2b4e6deccac1",
+      "name" : "WOPtoMPEpisodeDataTest",
+      "title" : "WOP to MP Episode Data Validations",
+      "time" : {
+        "start" : 1590129738682,
+        "stop" : 1590129740699,
+        "duration" : 2017
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "149a45b9581de2f2",
       "name" : "recordSearchField",
       "title" : "WOP to MP to Portal Integration",
       "time" : {
-        "start" : 1586931531722,
-        "stop" : 1586931605748,
-        "duration" : 74026
+        "start" : 1590129740701,
+        "stop" : 1590129786831,
+        "duration" : 46130
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "e9b8ac9dfaba99cc",
+      "uid" : "c2ed39722a0a9415",
       "name" : "WOPtoPortalEpisodeDataTest",
       "title" : "WOP to Portal Episode Data Validations",
       "time" : {
-        "start" : 1586931605750,
-        "stop" : 1586931607753,
-        "duration" : 2003
+        "start" : 1590129786834,
+        "stop" : 1590129788846,
+        "duration" : 2012
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "4000b78975528c56",
+      "uid" : "2440bedfa2ffa11b",
       "name" : "DataBaseConnectionTest",
       "title" : "Connecting to DataBase and Mediator",
       "time" : {
-        "start" : 1586931607754,
-        "stop" : 1586931612144,
-        "duration" : 4390
+        "start" : 1590129788848,
+        "stop" : 1590129794648,
+        "duration" : 5800
       },
       "severity" : "NORMAL",
       "status" : "PASSED"

@@ -3,17 +3,17 @@
   "plugins" : {
     "total" : {
       "statistic" : {
-        "total" : 9,
-        "passed" : 9,
+        "total" : 8,
+        "passed" : 8,
         "pending" : 0,
         "canceled" : 0,
         "failed" : 0,
         "broken" : 0
       },
       "time" : {
-        "start" : 1586930952258,
-        "stop" : 1586931612144,
-        "duration" : 659886
+        "start" : 1590128995857,
+        "stop" : 1590129794648,
+        "duration" : 798791
       }
     },
     "defects" : {
@@ -23,7 +23,7 @@
     "xunit" : {
       "totalCount" : 2,
       "items" : [ {
-        "uid" : "7a347f9067ffa80c",
+        "uid" : "d5c592c680cf11da",
         "title" : "Suite : Test",
         "statistic" : {
           "total" : 1,
@@ -34,11 +34,11 @@
           "broken" : 0
         }
       }, {
-        "uid" : "1407ccf5bca621b0",
+        "uid" : "23aa8aec2d4e193c",
         "title" : "Suite : Testclasess",
         "statistic" : {
-          "total" : 8,
-          "passed" : 8,
+          "total" : 7,
+          "passed" : 7,
           "pending" : 0,
           "canceled" : 0,
           "failed" : 0,
@@ -51,8 +51,8 @@
       "items" : [ {
         "title" : "Long Form Data Integration",
         "statistic" : {
-          "total" : 9,
-          "passed" : 9,
+          "total" : 8,
+          "passed" : 8,
           "pending" : 0,
           "canceled" : 0,
           "failed" : 0,

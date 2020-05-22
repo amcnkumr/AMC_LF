@@ -1,22 +1,22 @@
 {
-  "uid" : "e40a131bfdc2d87e",
+  "uid" : "c63427b4aa6ebe9b",
   "name" : "wopEpisodeVersionCreation",
   "title" : "WOP Episode version Creation",
   "time" : {
-    "start" : 1586930952258,
-    "stop" : 1586931124890,
-    "duration" : 172632
+    "start" : 1590129107103,
+    "stop" : 1590129485190,
+    "duration" : 378087
   },
   "summary" : {
     "attachments" : 0,
-    "steps" : 4
+    "steps" : 3
   },
   "failure" : null,
   "description" : null,
   "severity" : "NORMAL",
   "status" : "PASSED",
   "suite" : {
-    "uid" : "1407ccf5bca621b0",
+    "uid" : "23aa8aec2d4e193c",
     "name" : "Suite : Testclasess",
     "title" : "Suite : Testclasess"
   },
@@ -24,9 +24,9 @@
     "name" : "logStep[Episode Verison Creation is Success]",
     "title" : "Episode Verison Creation is Success",
     "time" : {
-      "start" : 1586931043876,
-      "stop" : 1586931043878,
-      "duration" : 2
+      "start" : 1590129237944,
+      "stop" : 1590129237944,
+      "duration" : 0
     },
     "summary" : {
       "attachments" : 0,
@@ -39,8 +39,8 @@
     "name" : "logStep[Created Media Asset In WOP Business System:Automation_LF prototype]",
     "title" : "Created Media Asset In WOP Business System:Automation_LF prototype",
     "time" : {
-      "start" : 1586931096847,
-      "stop" : 1586931096847,
+      "start" : 1590129339380,
+      "stop" : 1590129339380,
       "duration" : 0
     },
     "summary" : {
@@ -51,26 +51,11 @@
     "attachments" : [ ],
     "steps" : [ ]
   }, {
-    "name" : "logStep[Waited 120 Seconds For WOP Services UP And Run ]",
-    "title" : "Waited 120 Seconds For WOP Services UP And Run ",
+    "name" : "logStep[WOP Services Up And Running :RLA178227.2]",
+    "title" : "WOP Services Up And Running :RLA178227.2",
     "time" : {
-      "start" : 1586931096848,
-      "stop" : 1586931096848,
-      "duration" : 0
-    },
-    "summary" : {
-      "attachments" : 0,
-      "steps" : 0
-    },
-    "status" : "PASSED",
-    "attachments" : [ ],
-    "steps" : [ ]
-  }, {
-    "name" : "logStep[WOP Services Up And Running :RLA177304.2]",
-    "title" : "WOP Services Up And Running :RLA177304.2",
-    "time" : {
-      "start" : 1586931098850,
-      "stop" : 1586931098850,
+      "start" : 1590129417437,
+      "stop" : 1590129417437,
       "duration" : 0
     },
     "summary" : {
@@ -93,9 +78,6 @@
   }, {
     "name" : "language",
     "value" : "JAVA"
-  }, {
-    "name" : "thread",
-    "value" : "26504@MONO-HYD-LAP-41.main(1)"
   }, {
     "name" : "suite-name",
     "value" : "Suite : Testclasess"
@@ -120,6 +102,9 @@
   }, {
     "name" : "feature",
     "value" : "Long Form Data Integration"
+  }, {
+    "name" : "thread",
+    "value" : "19684@MONO-HYD-LAP-41.main(1)"
   } ],
   "parameters" : [ ]
 }

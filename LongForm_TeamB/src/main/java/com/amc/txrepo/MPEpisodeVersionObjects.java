@@ -23,7 +23,7 @@ public class MPEpisodeVersionObjects extends TxBase{
 	
 	
 	
-	public void MPEpisodeVersion() throws FindFailed {
+	public void MPEpisodeVersion() throws FindFailed, HeadlessException, UnsupportedFlavorException, IOException, InterruptedException {
 		
 		screen.wait((double) 2.0);
 		
@@ -31,7 +31,7 @@ public class MPEpisodeVersionObjects extends TxBase{
 		
         imageFindClick(MataVaultLibrary ,10);
 		
-        screen.wait((double) 4.0);
+        screen.wait((double) 3.0);
         
         String MataVaultLibraryTitles = "Pictures\\WopImages\\MataVaultLibraryTitles.PNG";
 		
@@ -45,11 +45,11 @@ public class MPEpisodeVersionObjects extends TxBase{
 
         screen.wait((double) 5.0);
         
-        String EnterAmcnFiedl = "Pictures\\WopImages\\EnterAmcnFiedl.PNG";
+        String EnterAmcnField = "Pictures\\WopImages\\EnterAmcnFiedl.PNG";
 		
-        //imageEnterText(EnterAmcnFiedl, WOPEpisodeVersion.rlacheckpoint,10);
+        imageEnterText(EnterAmcnField, WOPEpisodeVersion.rlacheckpoint,10);
         
-        imageEnterText(EnterAmcnFiedl, "RLA177304.2",10);
+        //imageEnterText(EnterAmcnFiedl, "RLA178218.2",10);
         
 		Clickenter();
 		
@@ -65,13 +65,13 @@ public class MPEpisodeVersionObjects extends TxBase{
         
         logStep("WOP to MP Integration is Success");
         
-        //logStep("WOP to MP Integration Data:" + WOPEpisodeVersion.rlacheckpoint);
+        logStep("WOP to MP Integration Data:" + WOPEpisodeVersion.rlacheckpoint);
         
-        //System.out.println("WOP to MP Integration Data:" + WOPEpisodeVersion.rlacheckpoint);
+        System.out.println("WOP to MP Integration Data:" + WOPEpisodeVersion.rlacheckpoint);
         
-        logStep("WOP to MP Integration Data:" + "RLA177304.2");
+        //logStep("WOP to MP Integration Data:" + "RLA177304.2");
         
-        System.out.println("WOP to MP Integration Data:" + "RLA177304.2");
+       //System.out.println("WOP to MP Integration Data:" + "RLA177304.2");
         
 		} catch(Exception e) {
 			
@@ -85,12 +85,129 @@ public class MPEpisodeVersionObjects extends TxBase{
         
 		screen.wait((double) 2.0);
 		
+		// Taking Fields 
+		
+		String MPAMCNID = "Pictures\\WopImages\\MPAMCNID.PNG";
+		   
+		imagedoubleclickcopyText(MPAMCNID,10);
+		
+		String mpAMCNID = "AMCNID:";
+		   
+		mpEpisodeVersionData(mpAMCNID);
+		
+		screen.wait((double) 2.0);
+		
+		String MPEpisodeNumber = "Pictures\\WopImages\\MPEpisodeNumber.PNG";
+		
+		imagecopyText(MPEpisodeNumber,10);
+			
+		String  mpEpisodeNumber= "EpisodeNumber:"; 
+			
+		mpEpisodeVersionData(mpEpisodeNumber);
+		
+		
+   	    String MPAiringOrder = "Pictures\\WopImages\\MPAiringOrder.PNG";
+		
+		imagecopyText(MPAiringOrder,10);
+		
+		String  mpAiringOrder= "AiringOrder:"; 
+		
+		mpEpisodeVersionData(mpAiringOrder);
+	    
+	    
+	    String MPShowType = "Pictures\\WopImages\\MPShowType.PNG";
+		
+		imagecopyText(MPShowType,10);
+		
+		String  mpShowType= "ShowType:"; 
+		
+		mpEpisodeVersionData(mpShowType);
+	
+		
+		tabforProductionmode();
+		
+		String MPProductionMode = "Pictures\\WopImages\\MPProductionMode.PNG";
+		
+		imagecopyText(MPProductionMode,10);
+		
+		String  mpProductionMode= "ProductionMode:"; 
+   		
+		mpEpisodeVersionData(mpProductionMode);
+	    
+	    
+	    String MPSecurityStatus = "Pictures\\WopImages\\MPSecurityStatus.PNG";
+		
+	    imagecopyText(MPSecurityStatus,10);
+		
+		String  mpSecurityStatus= "SecurityStatus:"; 
+		
+		mpEpisodeVersionData(mpSecurityStatus);
+	    
+	    
+	    String MPEditRestricted = "Pictures\\WopImages\\MPEditRestricted.PNG";
+		
+		imagecopyText(MPEditRestricted,10);
+		
+		String  mpEditRestricted= "EditRestricted:"; 
+		
+		mpEpisodeVersionData(mpEditRestricted);
+	    	    
+	  
+	    String MPEpisodeVersionType = "Pictures\\WopImages\\MPEpisodeVersionType.PNG";
+		
+		imagecopyText(MPEpisodeVersionType,10);
+		
+		String  mpEpisodeVersionType= "EpisodeVersionType:"; 
+		
+		mpEpisodeVersionData(mpEpisodeVersionType);
+		
+		
+		String MPOwnerNetwork = "Pictures\\WopImages\\MPOwnerNetwork.PNG";
+		   
+		imagedoubleclickcopyText(MPOwnerNetwork,10);
+		
+		String MPOwner = "Ownernetwork:";
+		   
+		mpEpisodeVersionData(MPOwner);
+		
+		screen.wait((double) 2.0);
+			
+		String MPSupplier = "Pictures\\WopImages\\MPSupplier.PNG";
+		   
+		imagedoubleclickcopyText(MPSupplier,10);
+		
+		String MPSupp = "Supplier:";
+		   
+		mpEpisodeVersionData(MPSupp);
+		
+		
+		String MPTheatricalLength = "Pictures\\WopImages\\MPTheatricalLength.PNG";
+		   
+		imagedoubleclickcopyText(MPTheatricalLength,10);
+		
+		String MPLength = "TheatricalLength:";
+		   
+		mpEpisodeVersionData(MPLength);
+		
+		screen.wait((double) 2.0);
+				
+		
+		String videoAMCNID = "AMCNIDVideo:";
+		   
+		mpEpisodeVersionDatavideo(videoAMCNID+TxBase.Mattextvalue+".video");
+		
+		
+	   String audioAMCNID = "AMCNIDAudio:";
+	   
+	   mpEpisodeVersionDataAudio(audioAMCNID+TxBase.Mattextvalue+".1.English.OA");
+		
+		
         String MediaAssets = "Pictures\\WopImages\\MediaAssets.PNG";
 		
         imageFindClick(MediaAssets ,10);
         
         refresh:
-        for(int i=1; i<=20; i++) {
+        for(int i=1; i<=35; i++) {
           
         try {
         	
@@ -119,10 +236,50 @@ public class MPEpisodeVersionObjects extends TxBase{
         imageFindClick(LSIT,5);
 		
         imageFindClick(LSIT,5);
+        
+        screen.wait((double) 6.0);
+        
+        String MPTitle = "Pictures\\WopImages\\MPTitle.PNG";
+		   
+		imagedoubleclickcopyText(MPTitle,10);
+		
+		String MPtitle = "Title:";
+		   
+		mpEpisodeVersionData(MPtitle);
+		
+		
+		String MPAssetSource = "Pictures\\WopImages\\MPAssetSource.PNG";
+		   
+		imagedoubleclickcopyText(MPAssetSource,10);
+		
+		String mpAssetsource = "AssetSource:";
+		   
+		mpEpisodeVersionData(mpAssetsource);
+		
+		
+		String MPFileStatus = "Pictures\\WopImages\\MPFileStatus.PNG";
+		   
+		imagedoubleclickcopyText(MPFileStatus,10);
+		
+		String mpfile = "FileStatus:";
+		   
+		mpEpisodeVersionData(mpfile);
+			
+		
+		String MPMat = "Pictures\\WopImages\\MPMat.PNG";
+		   
+		imagedoubleclickcopyText(MPMat,10);
+		
+		String mpmat = "MatID:";
+		   
+		mpEpisodeVersionData(mpmat);
+		
+             
+        
 	}
 	
         
-	// WOP Episode Data
+	// Taking Fields Data
 	
 	public void MPEpisodeData() throws FindFailed, HeadlessException, UnsupportedFlavorException, IOException, InterruptedException {
 		
@@ -133,17 +290,10 @@ public class MPEpisodeVersionObjects extends TxBase{
 		imageFindClick(Wheel, 2);
 		
 		screen.wait((double) 2.0);			
-		
-	    //String  amcnId= "AMCNID:";  
-       
-		//mpEpisodeVersionData(amcnId+WOPEpisodeVersion.rlacheckpoint);
-		
-		//TxBase.mpEpisodeVersionData.add(amcnId+WOPEpisodeVersion.rlacheckpoint);
-			
-		
+			  	
 		String mpScanType = "Pictures\\WopImages\\mpScanType.PNG";
 		
-		imagedoubleclickcopyText(mpScanType,10);
+		imagecopyText(mpScanType,10);
    		
    		String  scantype= "ExpectedScanType:"; 
    		
@@ -152,7 +302,7 @@ public class MPEpisodeVersionObjects extends TxBase{
 		
    	    String mpSegments = "Pictures\\WopImages\\mpSegments.PNG";
    	    
-   	    imagedoubleclickcopyText(mpSegments,10);
+   	    imagecopyText(mpSegments,10);
 		
 		String  segments= "ExpectedSegments:"; 
 		
@@ -161,7 +311,7 @@ public class MPEpisodeVersionObjects extends TxBase{
    		
 		String mpFrameRate =  "Pictures\\WopImages\\mpFrameRate.PNG";
 		
-		imagedoubleclickcopyText(mpFrameRate,10);
+		imagecopyText(mpFrameRate,10);
    		
   		String  framerate= "ExpectedFrameRate:"; 
   		
@@ -170,7 +320,7 @@ public class MPEpisodeVersionObjects extends TxBase{
    		
   		String mpVideoCodec = "Pictures\\WopImages\\mpVideoCodec.PNG";
   		
-  		imagedoubleclickcopyText(mpVideoCodec,10);
+  		imagecopyText(mpVideoCodec,10);
    		
    	    String  videocodec= "ExpectedVideoCodec:"; 
 		
@@ -179,7 +329,7 @@ public class MPEpisodeVersionObjects extends TxBase{
    	    
    	    String mpAspectRatio = "Pictures\\WopImages\\mpAspectRatio.PNG";
 		
-		imagedoubleclickcopyText(mpAspectRatio,10);
+   	    imagecopyText(mpAspectRatio,10);
 		
 	    String AspectRatio= "ExpectedAspectRatio:"; 
 		
@@ -188,7 +338,7 @@ public class MPEpisodeVersionObjects extends TxBase{
    		
 	    String mpFormat = "Pictures\\WopImages\\mpFormat.PNG";
 		
-		imagedoubleclickcopyText(mpFormat,10);
+	    imagecopyText(mpFormat,10);
 		
 	    String format= "ExpectedFormat:"; 
 		
@@ -202,9 +352,65 @@ public class MPEpisodeVersionObjects extends TxBase{
 	    String trt= "ExpectedFormat:"; 
 		
 	    mpEpisodeVersionData(trt);
+	     
+	    
+	    String  mpMAVersionType= "MAVersionType:"; 
+		
+		mpEpisodeVersionDatafinalTx(mpMAVersionType+"Final TX - Master");
+		
+	
+		String MPColor = "Pictures\\WopImages\\MPColor.PNG";
+		
+		imagecopyText(MPColor,10);
+			
+		String  mpColor= "Color/B&W:";
+		
+		mpEpisodeVersionData(mpColor);
    		
+	    // Taking Audio Data
    		
-   		
+	    String Audiotab = "Pictures\\WopImages\\Audiotab.PNG";
+		   
+		imageDoubleClick(Audiotab,10);
+		
+		
+		String Channel1 = "Pictures\\WopImages\\Channel1.PNG";
+		   
+		imageFindClick(Channel1,10);
+		
+		for(int right=0 ; right<=2; right++) {
+			
+			tabMethod();
+		}
+		
+		screen.wait((double) 1.0);
+		
+		String MPAudioDescription = "Pictures\\WopImages\\MPAudioDescription.PNG";
+		   
+		imagedoubleclickcopyText(MPAudioDescription,10);
+		
+		String MPchannel = "ExpectedChannel1-2:";
+		   
+		mpEpisodeVersionData(MPchannel);
+		
+		screen.wait((double) 1.0);
+		
+        for(int right=0 ; right<=1; right++) {
+			
+			tabMethod();
+		}
+		
+		screen.wait((double) 1.0);
+			
+		String MPAudioLanguage = "Pictures\\WopImages\\MPAudioLanguage.PNG";
+		   
+		imagedoubleclickcopyText(MPAudioLanguage,10);
+		
+		String MPlangu = "ExpectedLanguage:";
+		   
+		mpEpisodeVersionData(MPlangu);
+		
+		
    		
    		
 		

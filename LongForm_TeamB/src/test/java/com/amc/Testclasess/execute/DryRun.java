@@ -5,6 +5,7 @@ import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
 import java.util.ArrayList;
 
+
 import org.sikuli.script.FindFailed;
 import org.testng.annotations.Test;
 
@@ -24,14 +25,25 @@ public static ArrayList<String> one = new ArrayList<String>();
 	@Test
 	public void dryRun() throws HeadlessException, FindFailed, UnsupportedFlavorException, IOException, InterruptedException {
 		
-		String Supplier = "Pictures\\WopImages\\Supplier.PNG";
-		
-		imageEnterText(Supplier,"Miramax",10);
-		
-		for(int i=0; i<=2;i++) {
 			
-			Clickenter();
-		}
+	
+		
+			
+		String  mpMAVersionType= "MAVersionType:"; 
+			
+		mpEpisodeVersionDatafinalTx(mpMAVersionType+"Final TX - Master");
+		
+		
+		String MPColor = "Pictures\\WopImages\\MPColor.PNG";
+		
+		imagecopyText(MPColor,10);
+			
+		String  mpColor= "Color/B&W:";
+		
+		mpEpisodeVersionData(mpColor);
+   	    
+			
+		
 		
 	}
 

@@ -22,10 +22,13 @@ public class WOP_MP_Comparision extends TxBase{
 				
 				String mpEpisodeData = TxBase.mpEpisodeVersionData.get(j);
 													
-			logStep(String.format("WOP Episode Version Data  " + " [ " + wopEpisodeData + " ] " + " is Matched With " + " MP Episode Version Data " + " [ " + mpEpisodeData + " ] " ));
-										
-			System.out.println("WOP Episode Version Data  " + " [ " + wopEpisodeData + " ] " + " is Matched With " + " MP Episode Version Data " + " [ " + mpEpisodeData + " ] " );
-					
+			//logStep(String.format("WOP Data " + " [ " + wopEpisodeData + " ] " + " is Matched With " + " MP Episode Version Data " + " [ " + mpEpisodeData + " ] " ));
+							
+			logStep(String.format("WOP Data"+" [ " + wopEpisodeData + " ]"+" Matched With"+" MP Data"+" [ " + mpEpisodeData + " ] " ));
+			
+			//System.out.println("WOP Episode Version Data  " + " [ " + wopEpisodeData + " ] " + " is Matched With " + " MP Episode Version Data " + " [ " + mpEpisodeData + " ] " );
+			
+			System.out.println("WOP Data"+" [ " + wopEpisodeData + " ]"+" Matched With"+" MP Data"+" [ " + mpEpisodeData + " ] " );		
 					
 				}
 			

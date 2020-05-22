@@ -1,11 +1,11 @@
 {
-  "uid" : "adacaf5b711290b1",
-  "name" : "mpLaunchAndLoginTest",
-  "title" : "MP Login and Launch",
+  "uid" : "168ce140bf1bc8a",
+  "name" : "PortalLogin",
+  "title" : "Portal Login And Launch ",
   "time" : {
-    "start" : 1586931124899,
-    "stop" : 1586931250587,
-    "duration" : 125688
+    "start" : 1590128995857,
+    "stop" : 1590129107096,
+    "duration" : 111239
   },
   "summary" : {
     "attachments" : 0,
@@ -16,17 +16,17 @@
   "severity" : "NORMAL",
   "status" : "PASSED",
   "suite" : {
-    "uid" : "1407ccf5bca621b0",
+    "uid" : "23aa8aec2d4e193c",
     "name" : "Suite : Testclasess",
     "title" : "Suite : Testclasess"
   },
   "steps" : [ {
-    "name" : "logStep[MP Login Success]",
-    "title" : "MP Login Success",
+    "name" : "logStep[Portal Login Successful..]",
+    "title" : "Portal Login Successful..",
     "time" : {
-      "start" : 1586931172861,
-      "stop" : 1586931172861,
-      "duration" : 0
+      "start" : 1590129102091,
+      "stop" : 1590129102092,
+      "duration" : 1
     },
     "summary" : {
       "attachments" : 0,
@@ -46,20 +46,20 @@
     "name" : "testGroup",
     "value" : "Testclasess"
   }, {
-    "name" : "testClass",
-    "value" : "com.amc.Testclasess.execute.MP_launchAndLogin"
-  }, {
     "name" : "language",
     "value" : "JAVA"
   }, {
-    "name" : "story",
-    "value" : "MP"
+    "name" : "testMethod",
+    "value" : "PortalLogin"
   }, {
-    "name" : "thread",
-    "value" : "26504@MONO-HYD-LAP-41.main(1)"
+    "name" : "story",
+    "value" : "Portal"
   }, {
     "name" : "suite-name",
     "value" : "Suite : Testclasess"
+  }, {
+    "name" : "testClass",
+    "value" : "com.amc.Testclasess.execute.PortalLoginTest"
   }, {
     "name" : "suite-title",
     "value" : "Suite : Testclasess"
@@ -70,11 +70,11 @@
     "name" : "host",
     "value" : "MONO-HYD-LAP-41"
   }, {
-    "name" : "testMethod",
-    "value" : "mpLaunchAndLoginTest"
-  }, {
     "name" : "feature",
     "value" : "Long Form Data Integration"
+  }, {
+    "name" : "thread",
+    "value" : "19684@MONO-HYD-LAP-41.main(1)"
   } ],
   "parameters" : [ ]
 }

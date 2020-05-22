@@ -1,31 +1,46 @@
 {
-  "uid" : "d50852dba2915f6d",
-  "name" : "recordSearchField",
-  "title" : "WOP to MP to Portal Integration",
+  "uid" : "aa2da98a76623b0a",
+  "name" : "MPEpisodeVersionTest",
+  "title" : "WOP to MP Integration",
   "time" : {
-    "start" : 1586931531722,
-    "stop" : 1586931605748,
-    "duration" : 74026
+    "start" : 1590129485193,
+    "stop" : 1590129738679,
+    "duration" : 253486
   },
   "summary" : {
     "attachments" : 0,
-    "steps" : 1
+    "steps" : 2
   },
   "failure" : null,
   "description" : null,
   "severity" : "NORMAL",
   "status" : "PASSED",
   "suite" : {
-    "uid" : "1407ccf5bca621b0",
+    "uid" : "23aa8aec2d4e193c",
     "name" : "Suite : Testclasess",
     "title" : "Suite : Testclasess"
   },
   "steps" : [ {
-    "name" : "logStep[ WOP to MP to Portal Integration is Success : LSIT01021711]",
-    "title" : " WOP to MP to Portal Integration is Success : LSIT01021711",
+    "name" : "logStep[WOP to MP Integration is Success]",
+    "title" : "WOP to MP Integration is Success",
     "time" : {
-      "start" : 1586931588000,
-      "stop" : 1586931588000,
+      "start" : 1590129518868,
+      "stop" : 1590129518868,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[WOP to MP Integration Data:RLA178227.2]",
+    "title" : "WOP to MP Integration Data:RLA178227.2",
+    "time" : {
+      "start" : 1590129518869,
+      "stop" : 1590129518869,
       "duration" : 0
     },
     "summary" : {
@@ -46,17 +61,14 @@
     "name" : "testGroup",
     "value" : "Testclasess"
   }, {
-    "name" : "testMethod",
-    "value" : "recordSearchField"
+    "name" : "testClass",
+    "value" : "com.amc.Testclasess.execute.MPEpisodeVerstionTest"
   }, {
     "name" : "language",
     "value" : "JAVA"
   }, {
-    "name" : "thread",
-    "value" : "26504@MONO-HYD-LAP-41.main(1)"
-  }, {
     "name" : "story",
-    "value" : "Portal"
+    "value" : "MP"
   }, {
     "name" : "suite-name",
     "value" : "Suite : Testclasess"
@@ -64,8 +76,8 @@
     "name" : "suite-title",
     "value" : "Suite : Testclasess"
   }, {
-    "name" : "testClass",
-    "value" : "com.amc.Testclasess.execute.RecordLocatorTest"
+    "name" : "testMethod",
+    "value" : "MPEpisodeVersionTest"
   }, {
     "name" : "framework",
     "value" : "TestNG"
@@ -75,6 +87,9 @@
   }, {
     "name" : "feature",
     "value" : "Long Form Data Integration"
+  }, {
+    "name" : "thread",
+    "value" : "19684@MONO-HYD-LAP-41.main(1)"
   } ],
   "parameters" : [ ]
 }

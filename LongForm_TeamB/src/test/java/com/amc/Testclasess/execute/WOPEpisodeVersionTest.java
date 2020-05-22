@@ -19,7 +19,6 @@ public class WOPEpisodeVersionTest extends TxBase {
 	
 	
 	
-	
 	@Features("Long Form Data Integration")
 
 	@Stories("WOP")
@@ -38,8 +37,8 @@ public class WOPEpisodeVersionTest extends TxBase {
 		productBrowser.MediaAssetLinking();
 		
 		productBrowser.wopSourceData();
-	}
 	
+	}
 	
 	
 	 

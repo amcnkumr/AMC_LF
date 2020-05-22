@@ -27,7 +27,7 @@ public class RecordLocatorTest extends TxBase {
 	
 	public void recordSearchField() throws Throwable {
 		
-       if(WOPEpisodeVersion.Execution.equalsIgnoreCase("Fail")) {
+     if(WOPEpisodeVersion.Execution.equalsIgnoreCase("Fail")) {
 			
 			logStep("WOP is Not Up and Running");
 			
@@ -35,12 +35,19 @@ public class RecordLocatorTest extends TxBase {
 			
 		}else {
 		
-
 		recordLocator = PageFactory.initElements(driverWOP, RecordLocatorObjects.class);
 		
 		recordLocator.recordLocatorSelection();
 		
 		recordLocator.recordSearchField();
+	
+		portalEpisodeVersionData("MAVersionType:"+"Version Type");
+		
+		recordLocator.portalMetaDataScreen("EditRestricted:","Edit Restricted");
+
+		recordLocator.portalMetaDataScreen("SecurityStatus:","Security Status");
+		
+		recordLocator.portalMetaDataScreen("EpisodeVersionType:","Episode Version Type Code");
 		
 		recordLocator.portalMetaDataScreen("ExpectedSegments:","Expected Number of Segments");
 		
@@ -55,10 +62,27 @@ public class RecordLocatorTest extends TxBase {
 		recordLocator.portalMetaDataScreen("ExpectedFormat:","Format Expected");
 		
 		recordLocator.portalMetaDataScreen("EstimatedTRT:","Expected TRT");
-
-
-
-
+			
+		recordLocator.portalMetaDataScreen("AMCNID:","AMCN ID");
+		
+		recordLocator.portalMetaDataScreen("MatID:","Material ID");
+				
+		recordLocator.portalMetaDataScreen("Supplier:","Supplier");
+		
+		recordLocator.portalMetaDataScreen("Ownernetwork:","Owner Network");
+		
+		recordLocator.portalMetaDataScreen("Distributor:","Distributor Production Company");
+				
+		portalEpisodeVersionData("AMCNIDVideo:"+TxBase.Mattextvalue+".video");
+		
+		portalEpisodeVersionData("AMCNIDAudio:"+TxBase.Mattextvalue+".1.English.OA");
+		
+		portalEpisodeVersionData("ExpectedLanguage:"+"English");
+		
+		portalEpisodeVersionData("ExpectedChannel1-2:"+"Stereo");
+		
+		
+		
 	}
     
 	

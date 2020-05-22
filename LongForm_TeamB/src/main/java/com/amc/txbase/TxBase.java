@@ -12,9 +12,12 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -25,7 +28,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.hotkey.Keys;
 import org.sikuli.script.Button;
@@ -101,6 +104,8 @@ public class TxBase {
 			
 	}
 		
+		
+		
 		public void mpEpisodeVersionData(String field) {
 			
 			 mpEpisodeVersionData.add(field+textvalue);
@@ -112,6 +117,46 @@ public class TxBase {
 			 }			
 				
 		}
+		
+		public void mpEpisodeVersionDatavideo(String field) {
+			
+			 mpEpisodeVersionData.add(field);
+					
+			 for(int i=0; i<mpEpisodeVersionData.size(); i++) {
+				 
+		     System.out.println("MP Episode Verison Data :" + mpEpisodeVersionData.get(i));
+						
+			 }			
+				
+		}
+		
+		
+		public void mpEpisodeVersionDataAudio(String field) {
+			
+			 mpEpisodeVersionData.add(field);
+					
+			 for(int i=0; i<mpEpisodeVersionData.size(); i++) {
+				 
+		     System.out.println("MP Episode Verison Data :" + mpEpisodeVersionData.get(i));
+						
+			 }			
+				
+		}
+		
+		
+		public void mpEpisodeVersionDatafinalTx(String field) {
+			
+			 mpEpisodeVersionData.add(field);
+					
+			 for(int i=0; i<mpEpisodeVersionData.size(); i++) {
+				 
+		     System.out.println("MP Episode Verison Data :" + mpEpisodeVersionData.get(i));
+						
+			 }			
+				
+		}
+		
+		
 
 		public void portalEpisodeVersionData(String field) {
 			
@@ -153,8 +198,36 @@ public class TxBase {
 		}		
 		
 		
+		// Drop Down Handling Method
+		
+		public void colorOrBlackAndWhiteField() {
+			
+			/*JavascriptExecutor js = (JavascriptExecutor)driverWOP;
+			
+			js.executeScript("window.scrollBy(0,250)");*/
+			
+			((JavascriptExecutor)driverWOP).executeScript("scroll(0,400)");
+		
+			Select drpColor = new Select(driver.findElement(By.xpath("(//select[@label_text='Color / B&W'])[1]")));
+			
+			List<WebElement> options = drpColor.getOptions();
+			
+			 for (WebElement option : options) {
+				
+				 System.out.println(option.getText()); 
+			 }
+			 
+		
+			 }
 		
 		
+		// Tab Method
+		
+		public void tabMethod() {
+				
+				screen.type(Keys.RIGHT);				
+				
+			}
 		
 		
 
@@ -193,7 +266,7 @@ public class TxBase {
 
 	public void ExplicitWait(WebElement element) {
 
-		WebDriverWait wait = new WebDriverWait(driverWOP, 80);
+		WebDriverWait wait = new WebDriverWait(driverWOP, 300);
 
 		wait.until(ExpectedConditions.visibilityOf(element));
 
@@ -380,7 +453,8 @@ public class TxBase {
 		// Search For the view
 		Pattern ProdSearchView = fileReaders(ImagePath);
 		screen.wait(ProdSearchView, waitTime);
-		screen.click(ProdSearchView);
+		screen.doubleClick(ProdSearchView);
+		screen.wait((double) 1.0);	
 		screen.type("a", KeyModifier.CTRL);
 		screen.wait((double) 2.0);		
 		screen.type("c", KeyModifier.CTRL);	
@@ -461,6 +535,8 @@ public class TxBase {
 				
 		screen.type(Keys.UP);
 		
+		screen.type(Keys.UP);
+		
 	}
 	
 	// Clearing the Text
@@ -513,6 +589,34 @@ public class TxBase {
 	}
 	
 	
+	//Propagate window
+	public void propagatewindow() {
+		
+		screen.type(Keys.UP);	
+		screen.type(Keys.TAB);
+		screen.type(Keys.UP);
+	}
+	
+	
+	//Propagate window
+		public void tabforMAVersion() {
+				
+			screen.type(Keys.TAB);
+	        screen.wait((double) 1.0);	
+
+			
+		}
+	
+        public void tabforProductionmode() {
+        	
+        screen.wait((double) 3.0);	
+		
+        screen.type(Keys.DOWN);	
+		
+        screen.type(Keys.DOWN);	
+        
+        screen.wait((double) 2.0);
+	   }
 	
 	// Disoconnect the WOP Program
 	

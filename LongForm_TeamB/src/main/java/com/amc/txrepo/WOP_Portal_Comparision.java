@@ -22,10 +22,14 @@ public class WOP_Portal_Comparision extends TxBase{
 				
 				String portalEpisodeData = TxBase.portalEpisodeVersionData.get(j);
 													
-			logStep(String.format("WOP Episode Version Data  " + " [ " + wopEpisodeData + " ] " + " is Matched With " + " Portal Episode Version Data " + " [ " + portalEpisodeData + " ] " ));
-										
-			System.out.println("WOP Episode Version Data  " + " [ " + wopEpisodeData + " ] " + " is Matched With " + " Portal Episode Version Data " + " [ " + portalEpisodeData + " ] " );
-					
+			//logStep(String.format("WOP Episode Version Data  " + " [ " + wopEpisodeData + " ] " + " is Matched With " + " Portal Episode Version Data " + " [ " + portalEpisodeData + " ] " ));
+			
+			logStep(String.format("WOP Data"+" [ " + wopEpisodeData + " ]"+" Matched With"+" Portal Data"+" [ " + portalEpisodeData + " ] " ));		
+			
+			//System.out.println("WOP Episode Version Data  " + " [ " + wopEpisodeData + " ] " + " is Matched With " + " Portal Episode Version Data " + " [ " + portalEpisodeData + " ] " );
+				
+			System.out.println("WOP Data"+" [ " + wopEpisodeData + " ]"+" Matched With"+" Portal Data"+" [ " + portalEpisodeData + " ] " );		
+
 					
 				}
 			
