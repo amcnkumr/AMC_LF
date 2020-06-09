@@ -1,11 +1,11 @@
 {
-  "uid" : "317b53c306e40b9f",
+  "uid" : "b33a10e975d45f3c",
   "name" : "PortalLogin",
   "title" : "Portal Login And Launch ",
   "time" : {
-    "start" : 1590128995857,
-    "stop" : 1590129107096,
-    "duration" : 111239
+    "start" : 1591207660849,
+    "stop" : 1591207695166,
+    "duration" : 34317
   },
   "summary" : {
     "attachments" : 0,
@@ -16,7 +16,7 @@
   "severity" : "NORMAL",
   "status" : "PASSED",
   "suite" : {
-    "uid" : "d5c592c680cf11da",
+    "uid" : "bd2b30c8f81ad2b7",
     "name" : "Suite : Test",
     "title" : "Suite : Test"
   },
@@ -24,9 +24,9 @@
     "name" : "logStep[Portal Login Successful..]",
     "title" : "Portal Login Successful..",
     "time" : {
-      "start" : 1590129102091,
-      "stop" : 1590129102092,
-      "duration" : 1
+      "start" : 1591207690157,
+      "stop" : 1591207690160,
+      "duration" : 3
     },
     "summary" : {
       "attachments" : 0,
@@ -61,6 +61,9 @@
     "name" : "testClass",
     "value" : "com.amc.Testclasess.execute.PortalLoginTest"
   }, {
+    "name" : "thread",
+    "value" : "11640@MONO-HYD-LAP-41.main(1)"
+  }, {
     "name" : "framework",
     "value" : "TestNG"
   }, {
@@ -72,9 +75,6 @@
   }, {
     "name" : "feature",
     "value" : "Long Form Data Integration"
-  }, {
-    "name" : "thread",
-    "value" : "19684@MONO-HYD-LAP-41.main(1)"
   } ],
   "parameters" : [ ]
 }

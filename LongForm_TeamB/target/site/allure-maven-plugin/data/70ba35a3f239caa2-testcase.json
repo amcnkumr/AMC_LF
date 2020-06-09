@@ -1,47 +1,32 @@
 {
-  "uid" : "aa2da98a76623b0a",
-  "name" : "MPEpisodeVersionTest",
-  "title" : "WOP to MP Integration",
+  "uid" : "70ba35a3f239caa2",
+  "name" : "PortalLogin",
+  "title" : "Portal Login And Launch ",
   "time" : {
-    "start" : 1590129485193,
-    "stop" : 1590129738679,
-    "duration" : 253486
+    "start" : 1591207660849,
+    "stop" : 1591207695166,
+    "duration" : 34317
   },
   "summary" : {
     "attachments" : 0,
-    "steps" : 2
+    "steps" : 1
   },
   "failure" : null,
   "description" : null,
   "severity" : "NORMAL",
   "status" : "PASSED",
   "suite" : {
-    "uid" : "23aa8aec2d4e193c",
+    "uid" : "154baa8523c6ee36",
     "name" : "Suite : Testclasess",
     "title" : "Suite : Testclasess"
   },
   "steps" : [ {
-    "name" : "logStep[WOP to MP Integration is Success]",
-    "title" : "WOP to MP Integration is Success",
+    "name" : "logStep[Portal Login Successful..]",
+    "title" : "Portal Login Successful..",
     "time" : {
-      "start" : 1590129518868,
-      "stop" : 1590129518868,
-      "duration" : 0
-    },
-    "summary" : {
-      "attachments" : 0,
-      "steps" : 0
-    },
-    "status" : "PASSED",
-    "attachments" : [ ],
-    "steps" : [ ]
-  }, {
-    "name" : "logStep[WOP to MP Integration Data:RLA178227.2]",
-    "title" : "WOP to MP Integration Data:RLA178227.2",
-    "time" : {
-      "start" : 1590129518869,
-      "stop" : 1590129518869,
-      "duration" : 0
+      "start" : 1591207690157,
+      "stop" : 1591207690160,
+      "duration" : 3
     },
     "summary" : {
       "attachments" : 0,
@@ -61,23 +46,26 @@
     "name" : "testGroup",
     "value" : "Testclasess"
   }, {
-    "name" : "testClass",
-    "value" : "com.amc.Testclasess.execute.MPEpisodeVerstionTest"
-  }, {
     "name" : "language",
     "value" : "JAVA"
   }, {
+    "name" : "testMethod",
+    "value" : "PortalLogin"
+  }, {
     "name" : "story",
-    "value" : "MP"
+    "value" : "Portal"
   }, {
     "name" : "suite-name",
     "value" : "Suite : Testclasess"
   }, {
+    "name" : "testClass",
+    "value" : "com.amc.Testclasess.execute.PortalLoginTest"
+  }, {
+    "name" : "thread",
+    "value" : "11640@MONO-HYD-LAP-41.main(1)"
+  }, {
     "name" : "suite-title",
     "value" : "Suite : Testclasess"
-  }, {
-    "name" : "testMethod",
-    "value" : "MPEpisodeVersionTest"
   }, {
     "name" : "framework",
     "value" : "TestNG"
@@ -87,9 +75,6 @@
   }, {
     "name" : "feature",
     "value" : "Long Form Data Integration"
-  }, {
-    "name" : "thread",
-    "value" : "19684@MONO-HYD-LAP-41.main(1)"
   } ],
   "parameters" : [ ]
 }

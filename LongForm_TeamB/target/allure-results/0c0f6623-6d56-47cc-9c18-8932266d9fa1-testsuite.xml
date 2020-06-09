@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1591207660840" stop="1591207695247" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Suite : Testclasess</name>
+    <title>Suite : Testclasess</title>
+    <test-cases>
+        <test-case start="1591207660849" stop="1591207695166" status="passed">
+            <name>PortalLogin</name>
+            <title>Portal Login And Launch </title>
+            <steps>
+                <step start="1591207690157" stop="1591207690160" status="passed">
+                    <name>logStep[Portal Login Successful..]</name>
+                    <title>Portal Login Successful..</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Testclasess"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.PortalLoginTest"/>
+                <label name="testMethod" value="PortalLogin"/>
+                <label name="story" value="Portal"/>
+                <label name="feature" value="Long Form Data Integration"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="11640@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1591207695177" stop="1591207695187" status="passed">
+            <name>ValidatingexpectedField</name>
+            <title>ValidatingexpectedField</title>
+            <steps>
+                <step start="1591207695187" stop="1591207695187" status="passed">
+                    <name>logStep[WOP Data [ Expected:HD ] Matched With MP Data [ Expected:HD ] ]</name>
+                    <title>WOP Data [ Expected:HD ] Matched With MP Data [ Expected:HD ] </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Testclasess"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.DryRun"/>
+                <label name="testMethod" value="ValidatingexpectedField"/>
+                <label name="feature" value="Dry Test"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="11640@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1591207695190" stop="1591207695192" status="passed">
+            <name>ValidatingActual</name>
+            <title>ValidatingActual</title>
+            <steps>
+                <step start="1591207695192" stop="1591207695192" status="passed">
+                    <name>logStep[WOP Data [ Actual:SD ] Matched With MP Data [ Actual:SD ] ]</name>
+                    <title>WOP Data [ Actual:SD ] Matched With MP Data [ Actual:SD ] </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Testclasess"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.DryRun"/>
+                <label name="testMethod" value="ValidatingActual"/>
+                <label name="feature" value="Dry Test"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="11640@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1591207695195" stop="1591207695197" status="passed">
+            <name>ValidatingFormat</name>
+            <title>ValidatingFormat</title>
+            <steps>
+                <step start="1591207695197" stop="1591207695197" status="passed">
+                    <name>logStep[WOP Data [ Format:KID ] Matched With MP Data [ Format:KID ] ]</name>
+                    <title>WOP Data [ Format:KID ] Matched With MP Data [ Format:KID ] </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Testclasess"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.DryRun"/>
+                <label name="testMethod" value="ValidatingFormat"/>
+                <label name="feature" value="Dry Test"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="11640@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1591207695200" stop="1591207695202" status="passed">
+            <name>ValidatingSegments</name>
+            <title>ValidatingSegments</title>
+            <steps>
+                <step start="1591207695202" stop="1591207695202" status="passed">
+                    <name>logStep[WOP Data [ Segments:5 ] Matched With MP Data [ Segments:5 ] ]</name>
+                    <title>WOP Data [ Segments:5 ] Matched With MP Data [ Segments:5 ] </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Testclasess"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.DryRun"/>
+                <label name="testMethod" value="ValidatingSegments"/>
+                <label name="feature" value="Dry Test"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="11640@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

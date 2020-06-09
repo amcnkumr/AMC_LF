@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1591269794561" stop="1591269797958" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1591269794624" stop="1591269797928" status="passed">
+            <name>ValidatingActual</name>
+            <title>ValidatingActual</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.DryRun"/>
+                <label name="testMethod" value="ValidatingActual"/>
+                <label name="feature" value="Dry Test"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="5880@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

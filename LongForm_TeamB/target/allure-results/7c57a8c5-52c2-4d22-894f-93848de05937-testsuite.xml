@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:test-suite start="1590128993911" stop="1590129795678" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+<ns2:test-suite start="1591207656599" stop="1591207696546" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
     <name>Suite : Test</name>
     <title>Suite : Test</title>
     <test-cases>
-        <test-case start="1590128995857" stop="1590129107096" status="passed">
+        <test-case start="1591207660849" stop="1591207695166" status="passed">
             <name>PortalLogin</name>
             <title>Portal Login And Launch </title>
             <steps>
-                <step start="1590129102091" stop="1590129102092" status="passed">
+                <step start="1591207690157" stop="1591207690160" status="passed">
                     <name>logStep[Portal Login Successful..]</name>
                     <title>Portal Login Successful..</title>
                     <attachments/>
@@ -23,7 +23,7 @@
                 <label name="story" value="Portal"/>
                 <label name="feature" value="Long Form Data Integration"/>
                 <label name="host" value="MONO-HYD-LAP-41"/>
-                <label name="thread" value="19684@MONO-HYD-LAP-41.main(1)"/>
+                <label name="thread" value="11640@MONO-HYD-LAP-41.main(1)"/>
             </labels>
         </test-case>
     </test-cases>

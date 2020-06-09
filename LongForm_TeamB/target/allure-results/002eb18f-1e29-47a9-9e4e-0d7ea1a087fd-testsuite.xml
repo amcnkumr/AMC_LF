@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1591257472548" stop="1591257472661" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1591257472610" stop="1591257472623" status="passed">
+            <name>ValidatingexpectedField</name>
+            <title>ValidatingexpectedField</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.DryRun"/>
+                <label name="testMethod" value="ValidatingexpectedField"/>
+                <label name="feature" value="Dry Test"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="19464@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1591257472630" stop="1591257472632" status="passed">
+            <name>ValidatingActual</name>
+            <title>ValidatingActual</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.DryRun"/>
+                <label name="testMethod" value="ValidatingActual"/>
+                <label name="feature" value="Dry Test"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="19464@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1591257472635" stop="1591257472638" status="passed">
+            <name>ValidatingFormat</name>
+            <title>ValidatingFormat</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.DryRun"/>
+                <label name="testMethod" value="ValidatingFormat"/>
+                <label name="feature" value="Dry Test"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="19464@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1591257472641" stop="1591257472643" status="passed">
+            <name>ValidatingSegments</name>
+            <title>ValidatingSegments</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.DryRun"/>
+                <label name="testMethod" value="ValidatingSegments"/>
+                <label name="feature" value="Dry Test"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="19464@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
