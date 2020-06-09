@@ -1,8 +1,6 @@
 package com.amc.Testclasess.execute;
 
 
-import java.util.ArrayList;
-
 import org.openqa.selenium.support.PageFactory;
 
 import org.testng.annotations.Test;
@@ -20,9 +18,6 @@ public class PortalLoginTest extends TxBase {
 	
 	PortalLoginObjects portalLogin;
 	
-public static ArrayList<String> Chaitanya = new ArrayList<String>();
-	
-	public static ArrayList<String> Sunkara = new ArrayList<String>();
 	
 	WOPprogrameUtils WopUtils = new WOPprogrameUtils();
 		
@@ -55,16 +50,5 @@ public static ArrayList<String> Chaitanya = new ArrayList<String>();
 	//}
 	
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }

@@ -5,7 +5,7 @@
     <classes>
       <class name="com.amc.Testclasess.execute.DryRun">
         <methods>
-          <include name="ValidatingSegments"/>
+          <include name="dryRun"/>
         </methods>
       </class> <!-- com.amc.Testclasess.execute.DryRun -->
     </classes>

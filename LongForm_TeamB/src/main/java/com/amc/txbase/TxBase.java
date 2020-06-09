@@ -71,8 +71,6 @@ public class TxBase {
 	public static ArrayList<String> portalEpisodeVersionData = new ArrayList<String>();
 
 	
-	public String data ;
-	
 	// Allure Generator
 
 	@Step("{0}")
@@ -608,17 +606,6 @@ public class TxBase {
 
 			
 		}
-		
-		
-		//Propagate window
-				public void RightKey() {
-						
-					screen.type(Keys.RIGHT);
-			       
-					screen.wait((double) 1.0);	
-
-					
-				}
 	
         public void tabforProductionmode() {
         	

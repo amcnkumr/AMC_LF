@@ -1,7 +1,6 @@
 com\amc\txbase\TxBase.class
 com\amc\txrepo\WOPEpisodeVersion.class
 com\amc\txrepo\WOP_Portal_Comparision.class
-com\amc\txrepo\DryRunObj.class
 com\amc\txrepo\WOP_MP_Comparision.class
 com\amc\txrepo\MPEpisodeVersionObjects.class
 com\amc\txrepo\RecordLocatorObjects.class

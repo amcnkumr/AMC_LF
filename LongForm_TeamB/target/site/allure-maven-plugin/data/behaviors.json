@@ -2,61 +2,16 @@
   "features" : [ {
     "title" : "Long Form Data Integration",
     "statistic" : {
-      "total" : 2,
-      "passed" : 2,
+      "total" : 8,
+      "passed" : 8,
       "pending" : 0,
       "canceled" : 0,
       "failed" : 0,
       "broken" : 0
     },
     "stories" : [ {
-      "uid" : "e5af25ccf93fa837",
+      "uid" : "1fa1fabfee62c98",
       "title" : "Portal",
-      "statistic" : {
-        "total" : 2,
-        "passed" : 2,
-        "pending" : 0,
-        "canceled" : 0,
-        "failed" : 0,
-        "broken" : 0
-      },
-      "testCases" : [ {
-        "uid" : "70ba35a3f239caa2",
-        "name" : "PortalLogin",
-        "title" : "Portal Login And Launch ",
-        "time" : {
-          "start" : 1591207660849,
-          "stop" : 1591207695166,
-          "duration" : 34317
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      }, {
-        "uid" : "b33a10e975d45f3c",
-        "name" : "PortalLogin",
-        "title" : "Portal Login And Launch ",
-        "time" : {
-          "start" : 1591207660849,
-          "stop" : 1591207695166,
-          "duration" : 34317
-        },
-        "severity" : "NORMAL",
-        "status" : "PASSED"
-      } ]
-    } ]
-  }, {
-    "title" : "Dry Test",
-    "statistic" : {
-      "total" : 4,
-      "passed" : 4,
-      "pending" : 0,
-      "canceled" : 0,
-      "failed" : 0,
-      "broken" : 0
-    },
-    "stories" : [ {
-      "uid" : "5158fcbf765f98cb",
-      "title" : "Without story",
       "statistic" : {
         "total" : 4,
         "passed" : 4,
@@ -66,46 +21,126 @@
         "broken" : 0
       },
       "testCases" : [ {
-        "uid" : "3b91eaad0c939cba",
-        "name" : "ValidatingexpectedField",
-        "title" : "ValidatingexpectedField",
+        "uid" : "317b53c306e40b9f",
+        "name" : "PortalLogin",
+        "title" : "Portal Login And Launch ",
         "time" : {
-          "start" : 1591207695177,
-          "stop" : 1591207695187,
-          "duration" : 10
+          "start" : 1590128995857,
+          "stop" : 1590129107096,
+          "duration" : 111239
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "8737049c97a03587",
-        "name" : "ValidatingActual",
-        "title" : "ValidatingActual",
+        "uid" : "168ce140bf1bc8a",
+        "name" : "PortalLogin",
+        "title" : "Portal Login And Launch ",
         "time" : {
-          "start" : 1591207695190,
-          "stop" : 1591207695192,
-          "duration" : 2
+          "start" : 1590128995857,
+          "stop" : 1590129107096,
+          "duration" : 111239
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "52351870f37c1b84",
-        "name" : "ValidatingFormat",
-        "title" : "ValidatingFormat",
+        "uid" : "149a45b9581de2f2",
+        "name" : "recordSearchField",
+        "title" : "WOP to MP to Portal Integration",
         "time" : {
-          "start" : 1591207695195,
-          "stop" : 1591207695197,
-          "duration" : 2
+          "start" : 1590129740701,
+          "stop" : 1590129786831,
+          "duration" : 46130
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "2ab425681ea29815",
-        "name" : "ValidatingSegments",
-        "title" : "ValidatingSegments",
+        "uid" : "c2ed39722a0a9415",
+        "name" : "WOPtoPortalEpisodeDataTest",
+        "title" : "WOP to Portal Episode Data Validations",
         "time" : {
-          "start" : 1591207695200,
-          "stop" : 1591207695202,
-          "duration" : 2
+          "start" : 1590129786834,
+          "stop" : 1590129788846,
+          "duration" : 2012
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    }, {
+      "uid" : "3b22b9976defb9b3",
+      "title" : "WOP",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "c63427b4aa6ebe9b",
+        "name" : "wopEpisodeVersionCreation",
+        "title" : "WOP Episode version Creation",
+        "time" : {
+          "start" : 1590129107103,
+          "stop" : 1590129485190,
+          "duration" : 378087
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    }, {
+      "uid" : "cd339fc24701e3bd",
+      "title" : "MP",
+      "statistic" : {
+        "total" : 2,
+        "passed" : 2,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "aa2da98a76623b0a",
+        "name" : "MPEpisodeVersionTest",
+        "title" : "WOP to MP Integration",
+        "time" : {
+          "start" : 1590129485193,
+          "stop" : 1590129738679,
+          "duration" : 253486
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "ebcc2b4e6deccac1",
+        "name" : "WOPtoMPEpisodeDataTest",
+        "title" : "WOP to MP Episode Data Validations",
+        "time" : {
+          "start" : 1590129738682,
+          "stop" : 1590129740699,
+          "duration" : 2017
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    }, {
+      "uid" : "b68fcec8125cca90",
+      "title" : "Mediator",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "2440bedfa2ffa11b",
+        "name" : "DataBaseConnectionTest",
+        "title" : "Connecting to DataBase and Mediator",
+        "time" : {
+          "start" : 1590129788848,
+          "stop" : 1590129794648,
+          "duration" : 5800
         },
         "severity" : "NORMAL",
         "status" : "PASSED"

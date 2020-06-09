@@ -97,7 +97,7 @@ public class MPEpisodeVersionObjects extends TxBase{
 		
 		screen.wait((double) 2.0);
 		
-		/*String MPEpisodeNumber = "Pictures\\WopImages\\MPEpisodeNumber.PNG";
+		String MPEpisodeNumber = "Pictures\\WopImages\\MPEpisodeNumber.PNG";
 		
 		imagecopyText(MPEpisodeNumber,10);
 			
@@ -112,7 +112,7 @@ public class MPEpisodeVersionObjects extends TxBase{
 		
 		String  mpAiringOrder= "AiringOrder:"; 
 		
-		mpEpisodeVersionData(mpAiringOrder);*/
+		mpEpisodeVersionData(mpAiringOrder);
 	    
 	    
 	    String MPShowType = "Pictures\\WopImages\\MPShowType.PNG";
