@@ -90,7 +90,7 @@ public class WOPEpisodeVersion extends TxBase {
    	    
    	 productscreen.wait((double) 2.0);
    	    
-   	 String EpisodeNumber = "Pictures\\WopImages\\EpisodeNumber.PNG";
+   	/* String EpisodeNumber = "Pictures\\WopImages\\EpisodeNumber.PNG";
 		
 		imagecopyText(EpisodeNumber,10);
 		
@@ -106,7 +106,7 @@ public class WOPEpisodeVersion extends TxBase {
 		String  wopAiringOrder= "AiringOrder:"; 
 		
 	    wopEpisodeVersionData(wopAiringOrder+TxBase.textvalue);
-	    
+	    */
 	    
 	    String ShowType = "Pictures\\WopImages\\ShowType.PNG";
 		
@@ -320,10 +320,35 @@ public class WOPEpisodeVersion extends TxBase {
 			   imageFindClick(VideoComponent,10);
 			   
 			   productscreen.wait((double) 3.0);
-			   			   
+			   
+			   
+			   String ExpectedFrameRate = "Pictures\\WopImages\\ExpectedFrameRate.PNG";
+			   
+			   EnterTextandTabVersion(ExpectedFrameRate,ProductBrowserData.excelData[1][5],10);
+			   
+			   productscreen.wait((double) 2.0);
+			   
+			   		   
 			   String ExpectedScanType = "Pictures\\WopImages\\ExpectedScanType.PNG";
 			   
 			   EnterTextandTabVersion(ExpectedScanType,ProductBrowserData.excelData[1][3],10);
+			   
+			   productscreen.wait((double) 2.0);
+			   
+			   
+			   String ExpectedAspectRatio = "Pictures\\WopImages\\ExpectedAspectRatio.PNG";
+			   
+			   EnterTextandTabVersion(ExpectedAspectRatio,ProductBrowserData.excelData[1][7],10);
+			   
+			   productscreen.wait((double) 2.0);
+			   
+			   RightKey();
+			   
+			   productscreen.wait((double) 1.0);
+			   
+			   String ExpectedVideoFormat = "Pictures\\WopImages\\ExpectedAspectRatio.PNG";
+			   
+			   EnterTextandTabVersion(ExpectedVideoFormat,ProductBrowserData.excelData[1][8],10);
 			   
 			   productscreen.wait((double) 3.0);
 			   
