@@ -45,7 +45,8 @@ public class PortalLoginObjects extends TxBase {
 		}
 		
 
-	   
+	   try {
+		   
 	    ExplicitWait(userName);
 	   
 	    userName.sendKeys(UserName);
@@ -54,15 +55,28 @@ public class PortalLoginObjects extends TxBase {
 	    
 		nextButton.click();
 		
-		System.out.println("Portal userName entered successfully..");
+		logStep("Portal userName Entered successfully..");
 		
+	   }catch(Exception  e) {
+		   
+		   System.out.println("Portal userName Unable to Enter :" + e.getMessage());
+	   }
+		
+	    
+	   try {
+	   
 		ExplicitWait(passWord);
 		
 		passWord.sendKeys(Password);
 			
-		System.out.println("Portal passWord entered successfully..");
-		
 		loginButton.click();
+		
+		logStep("Portal password Entered successfully..");
+		
+	   }catch (Exception e) {
+		   
+		   System.out.println("Portal passWord Unable to Enter :" + e.getMessage());
+	   }
 		    
 	    
 		ExplicitWait(homeScreen);

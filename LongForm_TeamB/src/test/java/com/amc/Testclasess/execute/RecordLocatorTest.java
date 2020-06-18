@@ -2,12 +2,14 @@ package com.amc.Testclasess.execute;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+
 import org.testng.annotations.Test;
 
 
 import com.amc.txbase.TxBase;
 import com.amc.txrepo.RecordLocatorObjects;
 import com.amc.txrepo.WOPEpisodeVersion;
+
 
 import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
@@ -26,6 +28,9 @@ public class RecordLocatorTest extends TxBase {
 	@Test
 	
 	public void recordSearchField() throws Throwable {
+		
+		
+
 		
      if(WOPEpisodeVersion.Execution.equalsIgnoreCase("Fail")) {
 			

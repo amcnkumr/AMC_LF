@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Testclasess(failed)">
     <classes>
-      <class name="com.amc.Testclasess.execute.DryRun">
+      <class name="com.amc.Testclasess.execute.DataBaseTest">
         <methods>
-          <include name="ValidatingSegments"/>
+          <include name="DataBaseConnectionTest"/>
         </methods>
-      </class> <!-- com.amc.Testclasess.execute.DryRun -->
+      </class> <!-- com.amc.Testclasess.execute.DataBaseTest -->
+      <class name="com.amc.Testclasess.execute.RecordLocatorTest">
+        <methods>
+          <include name="recordSearchField"/>
+        </methods>
+      </class> <!-- com.amc.Testclasess.execute.RecordLocatorTest -->
+      <class name="com.amc.Testclasess.execute.MPEpisodeVerstionTest">
+        <methods>
+          <include name="MPEpisodeVersionTest"/>
+        </methods>
+      </class> <!-- com.amc.Testclasess.execute.MPEpisodeVerstionTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Testclasess(failed) -->
+</suite> <!-- Failed suite [Suite] -->

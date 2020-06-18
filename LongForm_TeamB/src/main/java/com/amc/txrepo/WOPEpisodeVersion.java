@@ -90,7 +90,8 @@ public class WOPEpisodeVersion extends TxBase {
    	    
    	 productscreen.wait((double) 2.0);
    	    
-   	/* String EpisodeNumber = "Pictures\\WopImages\\EpisodeNumber.PNG";
+   	 
+   	 	String EpisodeNumber = "Pictures\\WopImages\\EpisodeNumber.PNG";
 		
 		imagecopyText(EpisodeNumber,10);
 		
@@ -106,7 +107,7 @@ public class WOPEpisodeVersion extends TxBase {
 		String  wopAiringOrder= "AiringOrder:"; 
 		
 	    wopEpisodeVersionData(wopAiringOrder+TxBase.textvalue);
-	    */
+	    
 	    
 	    String ShowType = "Pictures\\WopImages\\ShowType.PNG";
 		
@@ -346,7 +347,7 @@ public class WOPEpisodeVersion extends TxBase {
 			   
 			   productscreen.wait((double) 1.0);
 			   
-			   String ExpectedVideoFormat = "Pictures\\WopImages\\ExpectedAspectRatio.PNG";
+			   String ExpectedVideoFormat = "Pictures\\WopImages\\ExpectedVideoFormat.PNG";
 			   
 			   EnterTextandTabVersion(ExpectedVideoFormat,ProductBrowserData.excelData[1][8],10);
 			   
@@ -367,7 +368,7 @@ public class WOPEpisodeVersion extends TxBase {
 			   //imageEnterText(ExpectedSegments,ProductBrowserData.excelData[1][4],10);
 			   
 			   
-			   for(int tab=0; tab<=2; tab++) {
+			   for(int tab=0; tab<=1; tab++) {
 				   
 				   productscreen.type(Keys.TAB);
 			   }
@@ -427,7 +428,7 @@ public class WOPEpisodeVersion extends TxBase {
 		   	    wopEpisodeVersionData(woptype+TxBase.textvalue);
 		   	    
 		   	    
-		   	    // Taking Distributor Field
+		   	   /* // Taking Distributor Field
 				
 		   		productscreen.wait((double) 2.0);
 		   			
@@ -437,10 +438,10 @@ public class WOPEpisodeVersion extends TxBase {
 		   			   		
 		   	    String  wopDistributor= "Distributor:"; 
 		   		
-		   	    wopEpisodeVersionData(wopDistributor+TxBase.textvalue);
+		   	    wopEpisodeVersionData(wopDistributor+TxBase.textvalue);*/
 		   	    
 		   	    
-		   	    // Taking TheatricalLength Field
+		   	    /*// Taking TheatricalLength Field
 				
 		   		productscreen.wait((double) 2.0);
 		   			
@@ -450,7 +451,7 @@ public class WOPEpisodeVersion extends TxBase {
 		   			   		
 		   	    String  wopTheatricalLength= "TheatricalLength:"; 
 		   		
-		   	    wopEpisodeVersionData(wopTheatricalLength+TxBase.textvalue);
+		   	    wopEpisodeVersionData(wopTheatricalLength+TxBase.textvalue);*/
 		   	    
 		   		
 		   	    // Taking Audio Components Fields
@@ -542,17 +543,17 @@ public class WOPEpisodeVersion extends TxBase {
 			   
 			   imagecopyDecimalText(CheckPoint,10);
 			   
-			    rlacheckpoint = TxBase.textvalueDecimal;
+			    rlacheckpoint = ProductBrowserData.excelData[1][1]+".2";
 				   
 				   //rlacheckpoint="RLA177304.2";
 			    		    	
 			   if(rlacheckpoint.contains("RLA")) {
 				   
-				  logStep("WOP Services Up And Running :" + TxBase.textvalueDecimal);
+				  logStep("WOP Services Up And Running :" + rlacheckpoint);
 				   
 				  //logStep("WOP Services Up And Running :" + rlacheckpoint);
 				   				   
-				  System.out.println(" WOP Services UP And Running:" + TxBase.textvalueDecimal);
+				  System.out.println(" WOP Services UP And Running:" + rlacheckpoint);
 				   
 				   //System.out.println(" WOP Services UP And Running:" + rlacheckpoint);
 				   

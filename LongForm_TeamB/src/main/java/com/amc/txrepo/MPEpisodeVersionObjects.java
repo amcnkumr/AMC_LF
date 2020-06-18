@@ -97,24 +97,8 @@ public class MPEpisodeVersionObjects extends TxBase{
 		
 		screen.wait((double) 2.0);
 		
-		/*String MPEpisodeNumber = "Pictures\\WopImages\\MPEpisodeNumber.PNG";
 		
-		imagecopyText(MPEpisodeNumber,10);
-			
-		String  mpEpisodeNumber= "EpisodeNumber:"; 
-			
-		mpEpisodeVersionData(mpEpisodeNumber);
-		
-		
-   	    String MPAiringOrder = "Pictures\\WopImages\\MPAiringOrder.PNG";
-		
-		imagecopyText(MPAiringOrder,10);
-		
-		String  mpAiringOrder= "AiringOrder:"; 
-		
-		mpEpisodeVersionData(mpAiringOrder);*/
-	    
-	    
+	   
 	    String MPShowType = "Pictures\\WopImages\\MPShowType.PNG";
 		
 		imagecopyText(MPShowType,10);
@@ -181,7 +165,40 @@ public class MPEpisodeVersionObjects extends TxBase{
 		mpEpisodeVersionData(MPSupp);
 		
 		
-		String MPTheatricalLength = "Pictures\\WopImages\\MPTheatricalLength.PNG";
+		try {
+		screen.wait((double) 2.0);
+		
+		String MPEpisodeNumber = "Pictures\\WopImages\\MPEpisodeNumber.PNG";
+		   
+		imagedoubleclickcopyText(MPEpisodeNumber,10);
+		
+		String MPEpi = "EpisodeNumber:";
+		   
+		mpEpisodeVersionData(MPEpi);
+		
+		}catch(Exception e) {
+			
+			System.out.println("Unable to Fetch Episode Number Value.. ");
+		}
+		
+		try {
+			screen.wait((double) 2.0);
+			
+			String MPAiringOrder = "Pictures\\WopImages\\MPAiringOrder.PNG";
+			   
+			imagedoubleclickcopyText(MPAiringOrder,10);
+			
+			String MPAir = "AiringOrder:";
+			   
+			mpEpisodeVersionData(MPAir);
+			
+			}catch(Exception e) {
+				
+				System.out.println("Unable to Fetch MPAiringOrder Value.. ");
+			}
+		
+		
+		/*String MPTheatricalLength = "Pictures\\WopImages\\MPTheatricalLength.PNG";
 		   
 		imagedoubleclickcopyText(MPTheatricalLength,10);
 		
@@ -189,7 +206,7 @@ public class MPEpisodeVersionObjects extends TxBase{
 		   
 		mpEpisodeVersionData(MPLength);
 		
-		screen.wait((double) 2.0);
+		screen.wait((double) 2.0);*/
 				
 		
 		String videoAMCNID = "AMCNIDVideo:";

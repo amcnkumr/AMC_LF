@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:test-suite start="1591207656599" stop="1591207696546" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+<ns2:test-suite start="1592466334296" stop="1592467068215" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
     <name>Suite : Test</name>
     <title>Suite : Test</title>
     <test-cases>
-        <test-case start="1591207660849" stop="1591207695166" status="passed">
+        <test-case start="1592466336789" stop="1592466375347" status="passed">
             <name>PortalLogin</name>
             <title>Portal Login And Launch </title>
             <steps>
-                <step start="1591207690157" stop="1591207690160" status="passed">
+                <step start="1592466356777" stop="1592466356780" status="passed">
+                    <name>logStep[Portal userName Entered successfully..]</name>
+                    <title>Portal userName Entered successfully..</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1592466370093" stop="1592466370093" status="passed">
+                    <name>logStep[Portal password Entered successfully..]</name>
+                    <title>Portal password Entered successfully..</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1592466370333" stop="1592466370333" status="passed">
                     <name>logStep[Portal Login Successful..]</name>
                     <title>Portal Login Successful..</title>
                     <attachments/>
@@ -23,7 +35,7 @@
                 <label name="story" value="Portal"/>
                 <label name="feature" value="Long Form Data Integration"/>
                 <label name="host" value="MONO-HYD-LAP-41"/>
-                <label name="thread" value="11640@MONO-HYD-LAP-41.main(1)"/>
+                <label name="thread" value="8972@MONO-HYD-LAP-41.main(1)"/>
             </labels>
         </test-case>
     </test-cases>

@@ -1,67 +1,89 @@
 {
   "testCases" : [ {
-    "uid" : "70ba35a3f239caa2",
+    "uid" : "c325469d8550cd7",
     "name" : "PortalLogin",
     "title" : "Portal Login And Launch ",
     "time" : {
-      "start" : 1591207660849,
-      "stop" : 1591207695166,
-      "duration" : 34317
+      "start" : 1592466336789,
+      "stop" : 1592466375347,
+      "duration" : 38558
     },
     "severity" : "NORMAL",
     "status" : "PASSED"
   }, {
-    "uid" : "3b91eaad0c939cba",
-    "name" : "ValidatingexpectedField",
-    "title" : "ValidatingexpectedField",
-    "time" : {
-      "start" : 1591207695177,
-      "stop" : 1591207695187,
-      "duration" : 10
-    },
-    "severity" : "NORMAL",
-    "status" : "PASSED"
-  }, {
-    "uid" : "8737049c97a03587",
-    "name" : "ValidatingActual",
-    "title" : "ValidatingActual",
-    "time" : {
-      "start" : 1591207695190,
-      "stop" : 1591207695192,
-      "duration" : 2
-    },
-    "severity" : "NORMAL",
-    "status" : "PASSED"
-  }, {
-    "uid" : "52351870f37c1b84",
-    "name" : "ValidatingFormat",
-    "title" : "ValidatingFormat",
-    "time" : {
-      "start" : 1591207695195,
-      "stop" : 1591207695197,
-      "duration" : 2
-    },
-    "severity" : "NORMAL",
-    "status" : "PASSED"
-  }, {
-    "uid" : "2ab425681ea29815",
-    "name" : "ValidatingSegments",
-    "title" : "ValidatingSegments",
-    "time" : {
-      "start" : 1591207695200,
-      "stop" : 1591207695202,
-      "duration" : 2
-    },
-    "severity" : "NORMAL",
-    "status" : "PASSED"
-  }, {
-    "uid" : "b33a10e975d45f3c",
+    "uid" : "c2b3c2c0d30a0511",
     "name" : "PortalLogin",
     "title" : "Portal Login And Launch ",
     "time" : {
-      "start" : 1591207660849,
-      "stop" : 1591207695166,
-      "duration" : 34317
+      "start" : 1592466336789,
+      "stop" : 1592466375347,
+      "duration" : 38558
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "fe69fe3b9954bcb0",
+    "name" : "wopEpisodeVersionCreation",
+    "title" : "WOP Episode version Creation",
+    "time" : {
+      "start" : 1592466375372,
+      "stop" : 1592466771847,
+      "duration" : 396475
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "253c7f7c7d43fc4",
+    "name" : "MPEpisodeVersionTest",
+    "title" : "WOP to MP Integration",
+    "time" : {
+      "start" : 1592466771855,
+      "stop" : 1592466996304,
+      "duration" : 224449
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "64b86436ed1e1a1c",
+    "name" : "WOPtoMPEpisodeDataTest",
+    "title" : "WOP to MP Episode Data Validations",
+    "time" : {
+      "start" : 1592466996309,
+      "stop" : 1592466998395,
+      "duration" : 2086
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "4b32b82c055c194b",
+    "name" : "recordSearchField",
+    "title" : "WOP to MP to Portal Integration",
+    "time" : {
+      "start" : 1592466998400,
+      "stop" : 1592467060094,
+      "duration" : 61694
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "7534723173dd1669",
+    "name" : "WOPtoPortalEpisodeDataTest",
+    "title" : "WOP to Portal Episode Data Validations",
+    "time" : {
+      "start" : 1592467060102,
+      "stop" : 1592467062133,
+      "duration" : 2031
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "a1fbb6f038ad18b8",
+    "name" : "DataBaseConnectionTest",
+    "title" : "Connecting to DataBase and Mediator",
+    "time" : {
+      "start" : 1592467062138,
+      "stop" : 1592467066495,
+      "duration" : 4357
     },
     "severity" : "NORMAL",
     "status" : "PASSED"

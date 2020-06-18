@@ -5,9 +5,10 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 import com.amc.txbase.ExcelUtils;
 import com.amc.txbase.TxBase;
+
+
 
 
 public class RecordLocatorObjects extends TxBase {
@@ -31,6 +32,10 @@ public class RecordLocatorObjects extends TxBase {
 	WebElement EpsiodeVersion;
 	
 	
+	@FindBy(xpath = "//div[contains(text(), 'Material')]")
+	WebElement MaterialSection;
+	
+	
 	//*[@id="recordLocator"]/tbody/tr/td[6]
 	
 	@FindBy(xpath = "//*[@id='recordLocator']/tbody/tr/td[6]")
@@ -52,9 +57,9 @@ public class RecordLocatorObjects extends TxBase {
 
 		recordLocator.click();
 
-		//logStep("RecordLocator button is selected");
+		logStep("RecordLocator screen is displayed");
 		
-		System.out.println("RecordLocator button is selected");
+		System.out.println("RecordLocator screen is displayed");
 		
 		switchBackFromFrame();
 
@@ -62,7 +67,7 @@ public class RecordLocatorObjects extends TxBase {
 
 		System.out.println(" Driver Exits From First Frame successful..");
 		
-		Thread.sleep(18000);
+		Thread.sleep(16000);
 
 	}
 
@@ -86,7 +91,9 @@ public class RecordLocatorObjects extends TxBase {
 				
 				recordSearchField.sendKeys(TxBase.Mattextvalue);
 				
-				//recordSearchField.sendKeys("LSIT01021834");
+				//recordSearchField.sendKeys("LSIT01021739");
+				
+				Thread.sleep(5000);
 				
 				ExplicitWait(recordTitle);
 				
@@ -100,20 +107,26 @@ public class RecordLocatorObjects extends TxBase {
 				
 				logStep(" Portal Record Is : " + TxBase.Mattextvalue);
 				
-							
-
-		ExplicitWait(recordOpenButton);
+				
+			try {
+				
+	    	 ExplicitWait(recordOpenButton);
 		
-		Thread.sleep(2000);
+		     Thread.sleep(2000);
 		
-		recordOpenButton.click();
-		
-		logStep(" WOP to MP to Portal Integration is Success : " + TxBase.Mattextvalue);
-		
-		//logStep(" WOP to MP to Portal Integration is Success : " + "LSIT01021711" );
-		
-		System.out.println("Selected record is launched successfully..");
-		
+		     recordOpenButton.click();
+		     
+		     logStep(" WOP to MP to Portal Integration is Success : " + TxBase.Mattextvalue);
+		     
+			}
+			
+			catch(Exception e) {
+				
+				System.out.println("Record is Not Flown to Portal");
+				
+			}
+		 
+	
 		switchBackFromFrame();
 		
 		System.out.println("Driver Exits From Second Frame successful...");
@@ -127,6 +140,12 @@ public class RecordLocatorObjects extends TxBase {
 		ExplicitWait(EpsiodeVersion);
 		
 		EpsiodeVersion.click();
+		
+		Thread.sleep(2000);
+		
+		ExplicitWait(MaterialSection);
+		
+		MaterialSection.click();
 
 		
 		}
@@ -179,12 +198,23 @@ public class RecordLocatorObjects extends TxBase {
 					
 					portalEpisodeVersionData(field+indexValue);
 				
-				} else {
+				} else if(indexValue.contains("EV-CB")) {
+					
+					indexValue = "Evergreen-Combo";
+					
+					portalEpisodeVersionData(field+indexValue);
+					
+				}else {
 					
 					portalEpisodeVersionData(field+indexValue);
 				}
 				
 							
+   
+    
+    
+    
+    
     }
 	
 	

@@ -1,0 +1,110 @@
+{
+  "uid" : "c2b3c2c0d30a0511",
+  "name" : "PortalLogin",
+  "title" : "Portal Login And Launch ",
+  "time" : {
+    "start" : 1592466336789,
+    "stop" : 1592466375347,
+    "duration" : 38558
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 3
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "f5fcd4574e57f21d",
+    "name" : "Suite : Testclasess",
+    "title" : "Suite : Testclasess"
+  },
+  "steps" : [ {
+    "name" : "logStep[Portal userName Entered successfully..]",
+    "title" : "Portal userName Entered successfully..",
+    "time" : {
+      "start" : 1592466356777,
+      "stop" : 1592466356780,
+      "duration" : 3
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Portal password Entered successfully..]",
+    "title" : "Portal password Entered successfully..",
+    "time" : {
+      "start" : 1592466370093,
+      "stop" : 1592466370093,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Portal Login Successful..]",
+    "title" : "Portal Login Successful..",
+    "time" : {
+      "start" : 1592466370333,
+      "stop" : 1592466370333,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "testGroup",
+    "value" : "Testclasess"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testMethod",
+    "value" : "PortalLogin"
+  }, {
+    "name" : "story",
+    "value" : "Portal"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Testclasess"
+  }, {
+    "name" : "testClass",
+    "value" : "com.amc.Testclasess.execute.PortalLoginTest"
+  }, {
+    "name" : "thread",
+    "value" : "8972@MONO-HYD-LAP-41.main(1)"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Testclasess"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "MONO-HYD-LAP-41"
+  }, {
+    "name" : "feature",
+    "value" : "Long Form Data Integration"
+  } ],
+  "parameters" : [ ]
+}
