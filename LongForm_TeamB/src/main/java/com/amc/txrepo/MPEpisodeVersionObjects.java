@@ -96,10 +96,8 @@ public class MPEpisodeVersionObjects extends TxBase{
 		mpEpisodeVersionData(mpAMCNID);
 		
 		screen.wait((double) 2.0);
-		
-		
-	   
-	    String MPShowType = "Pictures\\WopImages\\MPShowType.PNG";
+	    
+		String MPShowType = "Pictures\\WopImages\\MPShowType.PNG";
 		
 		imagecopyText(MPShowType,10);
 		
@@ -118,6 +116,15 @@ public class MPEpisodeVersionObjects extends TxBase{
    		
 		mpEpisodeVersionData(mpProductionMode);
 	    
+		
+		String mporgin = "Pictures\\WopImages\\mpOrigin.PNG";
+		
+	    imagecopyText(mporgin,10);
+		
+		String  mpOrigin= "Origin:"; 
+		
+		mpEpisodeVersionData(mpOrigin);
+		
 	    
 	    String MPSecurityStatus = "Pictures\\WopImages\\MPSecurityStatus.PNG";
 		
@@ -166,6 +173,7 @@ public class MPEpisodeVersionObjects extends TxBase{
 		
 		
 		try {
+			
 		screen.wait((double) 2.0);
 		
 		String MPEpisodeNumber = "Pictures\\WopImages\\MPEpisodeNumber.PNG";
@@ -182,6 +190,7 @@ public class MPEpisodeVersionObjects extends TxBase{
 		}
 		
 		try {
+			
 			screen.wait((double) 2.0);
 			
 			String MPAiringOrder = "Pictures\\WopImages\\MPAiringOrder.PNG";
@@ -198,239 +207,21 @@ public class MPEpisodeVersionObjects extends TxBase{
 			}
 		
 		
-		/*String MPTheatricalLength = "Pictures\\WopImages\\MPTheatricalLength.PNG";
+		String MPTheatricalLength = "Pictures\\WopImages\\MPTheatricalLength.PNG";
 		   
 		imagedoubleclickcopyText(MPTheatricalLength,10);
 		
-		String MPLength = "TheatricalLength:";
+		String MPLength = "ExpectedDuration:";
 		   
 		mpEpisodeVersionData(MPLength);
 		
-		screen.wait((double) 2.0);*/
+		screen.wait((double) 2.0);
 				
-		
-		String videoAMCNID = "AMCNIDVideo:";
-		   
-		mpEpisodeVersionDatavideo(videoAMCNID+TxBase.Mattextvalue+".video");
-		
-		
-	   String audioAMCNID = "AMCNIDAudio:";
-	   
-	   mpEpisodeVersionDataAudio(audioAMCNID+TxBase.Mattextvalue+".1.English.OA");
-		
-		
-        String MediaAssets = "Pictures\\WopImages\\MediaAssets.PNG";
-		
-        imageFindClick(MediaAssets ,10);
-        
-        refresh:
-        for(int i=1; i<=35; i++) {
-          
-        try {
-        	
-        	String MPChekPoint = "Pictures\\WopImages\\MPChekPoint.PNG";
-        	
-        	imageFindClick(MPChekPoint,3);
-        	
-        	break refresh;
-        }
-          catch(Exception e){
-        	  
-        	  String Refresh = "Pictures\\WopImages\\Refresh.PNG";
-              
-              imageFindClick(Refresh,5);
-        	  
-          }
-          
-    
-        
-        }
-        
-        screen.wait((double) 4.0);
-        
-        String LSIT = "Pictures\\WopImages\\LSIT.PNG";
-        
-        imageFindClick(LSIT,5);
-		
-        imageFindClick(LSIT,5);
-        
-        screen.wait((double) 6.0);
-        
-        String MPTitle = "Pictures\\WopImages\\MPTitle.PNG";
-		   
-		imagedoubleclickcopyText(MPTitle,10);
-		
-		String MPtitle = "Title:";
-		   
-		mpEpisodeVersionData(MPtitle);
-		
-		
-		String MPAssetSource = "Pictures\\WopImages\\MPAssetSource.PNG";
-		   
-		imagedoubleclickcopyText(MPAssetSource,10);
-		
-		String mpAssetsource = "AssetSource:";
-		   
-		mpEpisodeVersionData(mpAssetsource);
-		
-		
-		String MPFileStatus = "Pictures\\WopImages\\MPFileStatus.PNG";
-		   
-		imagedoubleclickcopyText(MPFileStatus,10);
-		
-		String mpfile = "FileStatus:";
-		   
-		mpEpisodeVersionData(mpfile);
-			
-		
-		String MPMat = "Pictures\\WopImages\\MPMat.PNG";
-		   
-		imagedoubleclickcopyText(MPMat,10);
-		
-		String mpmat = "MatID:";
-		   
-		mpEpisodeVersionData(mpmat);
-		
-             
+	          
         
 	}
 	
         
-	// Taking Fields Data
 	
-	public void MPEpisodeData() throws FindFailed, HeadlessException, UnsupportedFlavorException, IOException, InterruptedException {
-		
-		screen.wait((double) 4.0);
-		
-		String Wheel = "Pictures\\WopImages\\Wheel.PNG";
-		
-		imageFindClick(Wheel, 2);
-		
-		screen.wait((double) 2.0);			
-			  	
-		String mpScanType = "Pictures\\WopImages\\mpScanType.PNG";
-		
-		imagecopyText(mpScanType,10);
-   		
-   		String  scantype= "ExpectedScanType:"; 
-   		
-   		mpEpisodeVersionData(scantype);
-		
-		
-   	    String mpSegments = "Pictures\\WopImages\\mpSegments.PNG";
-   	    
-   	    imagecopyText(mpSegments,10);
-		
-		String  segments= "ExpectedSegments:"; 
-		
-		mpEpisodeVersionData(segments);
-   		
-   		
-		String mpFrameRate =  "Pictures\\WopImages\\mpFrameRate.PNG";
-		
-		imagecopyText(mpFrameRate,10);
-   		
-  		String  framerate= "ExpectedFrameRate:"; 
-  		
-  		mpEpisodeVersionData(framerate);
-   		
-   		
-  		String mpVideoCodec = "Pictures\\WopImages\\mpVideoCodec.PNG";
-  		
-  		imagecopyText(mpVideoCodec,10);
-   		
-   	    String  videocodec= "ExpectedVideoCodec:"; 
-		
-   	    mpEpisodeVersionData(videocodec);
-   	    
-   	    
-   	    String mpAspectRatio = "Pictures\\WopImages\\mpAspectRatio.PNG";
-		
-   	    imagecopyText(mpAspectRatio,10);
-		
-	    String AspectRatio= "ExpectedAspectRatio:"; 
-		
-	    mpEpisodeVersionData(AspectRatio);
-   		 		
-   		
-	    String mpFormat = "Pictures\\WopImages\\mpFormat.PNG";
-		
-	    imagecopyText(mpFormat,10);
-		
-	    String format= "ExpectedFormat:"; 
-		
-	    mpEpisodeVersionData(format);
-   		
-   		
-        String mpTRT = "Pictures\\WopImages\\mpTRT.PNG";
-		
-		imagedoubleclickcopyText(mpTRT,10);
-		
-	    String trt= "ExpectedFormat:"; 
-		
-	    mpEpisodeVersionData(trt);
-	     
-	    
-	    String  mpMAVersionType= "MAVersionType:"; 
-		
-		mpEpisodeVersionDatafinalTx(mpMAVersionType+"Final TX - Master");
-		
-	
-		String MPColor = "Pictures\\WopImages\\MPColor.PNG";
-		
-		imagecopyText(MPColor,10);
-			
-		String  mpColor= "Color/B&W:";
-		
-		mpEpisodeVersionData(mpColor);
-   		
-	    // Taking Audio Data
-   		
-	    String Audiotab = "Pictures\\WopImages\\Audiotab.PNG";
-		   
-		imageDoubleClick(Audiotab,10);
-		
-		
-		String Channel1 = "Pictures\\WopImages\\Channel1.PNG";
-		   
-		imageFindClick(Channel1,10);
-		
-		for(int right=0 ; right<=2; right++) {
-			
-			tabMethod();
-		}
-		
-		screen.wait((double) 1.0);
-		
-		String MPAudioDescription = "Pictures\\WopImages\\MPAudioDescription.PNG";
-		   
-		imagedoubleclickcopyText(MPAudioDescription,10);
-		
-		String MPchannel = "ExpectedChannel1-2:";
-		   
-		mpEpisodeVersionData(MPchannel);
-		
-		screen.wait((double) 1.0);
-		
-        for(int right=0 ; right<=1; right++) {
-			
-			tabMethod();
-		}
-		
-		screen.wait((double) 1.0);
-			
-		String MPAudioLanguage = "Pictures\\WopImages\\MPAudioLanguage.PNG";
-		   
-		imagedoubleclickcopyText(MPAudioLanguage,10);
-		
-		String MPlangu = "ExpectedLanguage:";
-		   
-		mpEpisodeVersionData(MPlangu);
-		
-		
-   		
-   		
-		
-	}
 }
 

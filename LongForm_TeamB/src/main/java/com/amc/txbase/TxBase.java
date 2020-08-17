@@ -68,7 +68,7 @@ public class TxBase {
 	
 	public static ArrayList<String> mpEpisodeVersionData = new ArrayList<String>();
 	
-	public static ArrayList<String> portalEpisodeVersionData = new ArrayList<String>();
+	
 
 	
 	public String data ;
@@ -158,21 +158,8 @@ public class TxBase {
 				
 		}
 		
-		
-
-		public void portalEpisodeVersionData(String field) {
+	
 			
-			portalEpisodeVersionData.add(field);
-					
-			 for(int i=0; i<portalEpisodeVersionData.size(); i++) {
-				 
-		     System.out.println("Portal Episode Verison Data :" + portalEpisodeVersionData.get(i));
-						
-			 }			
-				
-		}
-		
-		
 		// Switching to the record locator first frame
 
 		public void switchToFirstFrame() {
@@ -600,11 +587,12 @@ public class TxBase {
 	}
 	
 	
-	//Propagate window
+		//Propagate window
 		public void tabforMAVersion() {
 				
 			screen.type(Keys.TAB);
-	        screen.wait((double) 1.0);	
+	        
+			screen.wait((double) 1.0);	
 
 			
 		}

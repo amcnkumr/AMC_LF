@@ -1,0 +1,80 @@
+{
+  "uid" : "7dd98bff761018a6",
+  "name" : "ValidateEpisodeNumberTest",
+  "title" : "Validate EpisodeNumber Field",
+  "time" : {
+    "start" : 1597653438468,
+    "stop" : 1597653438469,
+    "duration" : 1
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 1
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "3512517ea17baae1",
+    "name" : "Suite : Testclasess",
+    "title" : "Suite : Testclasess"
+  },
+  "steps" : [ {
+    "name" : "logStep[WOP Data [ EpisodeNumber:04-006 ] Matched With MP Data [ EpisodeNumber:04-006 ] ]",
+    "title" : "WOP Data [ EpisodeNumber:04-006 ] Matched With MP Data [ EpisodeNumber:04-006 ] ",
+    "time" : {
+      "start" : 1597653438468,
+      "stop" : 1597653438469,
+      "duration" : 1
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "testGroup",
+    "value" : "Testclasess"
+  }, {
+    "name" : "testClass",
+    "value" : "com.amc.Testclasess.execute.WOP_MPComparisionTest"
+  }, {
+    "name" : "story",
+    "value" : "WOP to MP Data Validations"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testMethod",
+    "value" : "ValidateEpisodeNumberTest"
+  }, {
+    "name" : "thread",
+    "value" : "15244@MONO-HYD-LAP-41.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Testclasess"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Testclasess"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "MONO-HYD-LAP-41"
+  }, {
+    "name" : "feature",
+    "value" : "Long Form Data Integration"
+  } ],
+  "parameters" : [ ]
+}

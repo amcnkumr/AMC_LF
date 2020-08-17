@@ -1,0 +1,80 @@
+{
+  "uid" : "c61be8be1fc6e5a7",
+  "name" : "ValidateAiringOrderTest",
+  "title" : "Validate AiringOrder Field",
+  "time" : {
+    "start" : 1597653438470,
+    "stop" : 1597653438471,
+    "duration" : 1
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 1
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "3512517ea17baae1",
+    "name" : "Suite : Testclasess",
+    "title" : "Suite : Testclasess"
+  },
+  "steps" : [ {
+    "name" : "logStep[WOP Data [ AiringOrder:402 ] Matched With MP Data [ AiringOrder:402 ] ]",
+    "title" : "WOP Data [ AiringOrder:402 ] Matched With MP Data [ AiringOrder:402 ] ",
+    "time" : {
+      "start" : 1597653438471,
+      "stop" : 1597653438471,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "testGroup",
+    "value" : "Testclasess"
+  }, {
+    "name" : "testClass",
+    "value" : "com.amc.Testclasess.execute.WOP_MPComparisionTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "ValidateAiringOrderTest"
+  }, {
+    "name" : "story",
+    "value" : "WOP to MP Data Validations"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "thread",
+    "value" : "15244@MONO-HYD-LAP-41.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Testclasess"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Testclasess"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "MONO-HYD-LAP-41"
+  }, {
+    "name" : "feature",
+    "value" : "Long Form Data Integration"
+  } ],
+  "parameters" : [ ]
+}

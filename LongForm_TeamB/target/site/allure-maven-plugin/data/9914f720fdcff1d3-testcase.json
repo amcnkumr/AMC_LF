@@ -1,0 +1,80 @@
+{
+  "uid" : "9914f720fdcff1d3",
+  "name" : "ValidateDistributorTest",
+  "title" : "Validate Distributor Field",
+  "time" : {
+    "start" : 1597653438477,
+    "stop" : 1597653438478,
+    "duration" : 1
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 1
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "3512517ea17baae1",
+    "name" : "Suite : Testclasess",
+    "title" : "Suite : Testclasess"
+  },
+  "steps" : [ {
+    "name" : "logStep[WOP Data [ Distributor:\"Film Garden Entertainment, Inc. 1\" ] Matched With MP Data [ Distributor:\"Film Garden Ent...]",
+    "title" : "WOP Data [ Distributor:\"Film Garden Entertainment, Inc. 1\" ] Matched With MP Data [ Distributor:\"Film Garden Entertainme...",
+    "time" : {
+      "start" : 1597653438478,
+      "stop" : 1597653438478,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "testGroup",
+    "value" : "Testclasess"
+  }, {
+    "name" : "testClass",
+    "value" : "com.amc.Testclasess.execute.WOP_MPComparisionTest"
+  }, {
+    "name" : "story",
+    "value" : "WOP to MP Data Validations"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "thread",
+    "value" : "15244@MONO-HYD-LAP-41.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Testclasess"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Testclasess"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "MONO-HYD-LAP-41"
+  }, {
+    "name" : "testMethod",
+    "value" : "ValidateDistributorTest"
+  }, {
+    "name" : "feature",
+    "value" : "Long Form Data Integration"
+  } ],
+  "parameters" : [ ]
+}

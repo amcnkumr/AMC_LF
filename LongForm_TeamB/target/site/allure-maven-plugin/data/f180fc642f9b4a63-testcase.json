@@ -1,0 +1,80 @@
+{
+  "uid" : "f180fc642f9b4a63",
+  "name" : "ValidateSecurityStatusTest",
+  "title" : "Validate SecurityStatus Field",
+  "time" : {
+    "start" : 1597653438479,
+    "stop" : 1597653438480,
+    "duration" : 1
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 1
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "3512517ea17baae1",
+    "name" : "Suite : Testclasess",
+    "title" : "Suite : Testclasess"
+  },
+  "steps" : [ {
+    "name" : "logStep[WOP Data [ SecurityStatus:Open ] Matched With MP Data [ SecurityStatus:Open ] ]",
+    "title" : "WOP Data [ SecurityStatus:Open ] Matched With MP Data [ SecurityStatus:Open ] ",
+    "time" : {
+      "start" : 1597653438480,
+      "stop" : 1597653438480,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "testGroup",
+    "value" : "Testclasess"
+  }, {
+    "name" : "testClass",
+    "value" : "com.amc.Testclasess.execute.WOP_MPComparisionTest"
+  }, {
+    "name" : "story",
+    "value" : "WOP to MP Data Validations"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testMethod",
+    "value" : "ValidateSecurityStatusTest"
+  }, {
+    "name" : "thread",
+    "value" : "15244@MONO-HYD-LAP-41.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Testclasess"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Testclasess"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "MONO-HYD-LAP-41"
+  }, {
+    "name" : "feature",
+    "value" : "Long Form Data Integration"
+  } ],
+  "parameters" : [ ]
+}

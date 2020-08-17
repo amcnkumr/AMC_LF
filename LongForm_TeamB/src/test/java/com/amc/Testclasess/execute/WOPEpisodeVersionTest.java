@@ -34,7 +34,7 @@ public class WOPEpisodeVersionTest extends TxBase {
 		
 		productBrowser.EpisodeVersionCreation();
 		
-		productBrowser.MediaAssetLinking();
+		productBrowser.servicesCheckPoint();
 		
 		productBrowser.wopSourceData();
 	

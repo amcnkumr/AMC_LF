@@ -1,11 +1,5 @@
 package com.amc.Testclasess.execute;
-
-
-
-
-
-
-import org.openqa.selenium.support.PageFactory;
+import org.sikuli.script.Screen;
 import org.testng.annotations.Test;
 import com.amc.txbase.TxBase;
 import com.amc.txrepo.DryRunObj;
@@ -18,6 +12,7 @@ public class DryRun extends TxBase {
 	
 	DryRunObj dd= new DryRunObj();
 	
+	Screen productscreen = new Screen();
 	
 	@Features("Dry Test")
 	 
@@ -26,68 +21,28 @@ public class DryRun extends TxBase {
 	@Test(priority=1)
 	public void ValidatingexpectedField() throws Exception {
 		
-		dd= PageFactory.initElements(driverWOP, DryRunObj.class);
 		
-		dd.addingtest();
+		/*String MPAssetSource = "Pictures\\WopImages\\MPAssetSource.PNG";
+		   
+		imagedoubleclickcopyText(MPAssetSource,10);
+		
+		String mpAssetsource = "AssetSource:";
+		   
+		mpEpisodeVersionData(mpAssetsource);*/
+		
+	    
+		String MPTitle = "Pictures\\WopImages\\MPTitle.PNG";
+		   
+		imagedoubleclickcopyText(MPTitle,10);
+		
+		String MPtitle = "Title:";
+		   
+		mpEpisodeVersionData(MPtitle);
+   	    
+		
+	}
+	
 
-		 data = "Expected:";
-	
-		dd.dryRun(data);
-	}
-	
-	
-	@Features("Dry Test")
-	 
-	@Title("ValidatingActual")
-	
-	@Test(priority=2)
-	public void ValidatingActual() throws Exception {
-		
-		dd= PageFactory.initElements(driverWOP, DryRunObj.class);
-		
-		 data = "Actual:";
-		
-		dd.dryRun(data);
-		
-	}
-	
-	
-	@Features("Dry Test")
-	 
-	@Title("ValidatingFormat")
-	
-	@Test(priority=3)
-	public void ValidatingFormat() throws Exception {
-		
-		dd= PageFactory.initElements(driverWOP, DryRunObj.class);
-		
-		 data = "Format:";
-		
-		dd.dryRun(data);
-		
-		System.out.println("Hiii");
-		
-	}
-	
-	
-	
-	@Features("Dry Test")
-	 
-	@Title("ValidatingSegments")
-	@Test(priority=4)
-	public void ValidatingSegments() throws Exception {
-		
-		dd= PageFactory.initElements(driverWOP, DryRunObj.class);
-		
-		String data = "Segments:";
-		
-		dd.dryRun(data);
-		
-	}
-	
-	
-	
-	
 	
 
 }

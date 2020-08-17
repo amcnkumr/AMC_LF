@@ -3,27 +3,42 @@
   "plugins" : {
     "total" : {
       "statistic" : {
-        "total" : 8,
-        "passed" : 8,
+        "total" : 18,
+        "passed" : 15,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 0,
+        "failed" : 3,
         "broken" : 0
       },
       "time" : {
-        "start" : 1592466336789,
-        "stop" : 1592467066495,
-        "duration" : 729706
+        "start" : 1597652996102,
+        "stop" : 1597653438497,
+        "duration" : 442395
       }
     },
     "defects" : {
-      "totalCount" : 0,
-      "items" : [ ]
+      "totalCount" : 3,
+      "items" : [ {
+        "count" : 1,
+        "uid" : "729b708d759dc40e",
+        "message" : "AssertionError: The following asserts failed:\n\tExpectedDuration:30:00 --- Not Matched with --- [AssetSource:Original, Distributor:\"Film Garden Entertainment, Inc. 1\", Title:Platinum Weddings: 04-006: Jaimie & Gregg, AMCNID:RLA169547.2, ShowType:Series, ProductionMode:Unscripted, Origin:Owned, SecurityStatus:Open, EditRestricted:Non Restricted (NR), EpisodeVersionType:Open, Ownernetwork:Open, Supplier:Miramax, EpisodeNumber:04-006, AiringOrder:402, ExpectedDuration:00:30:00]",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "69fd1f4c6038d11d",
+        "message" : "AssertionError: The following asserts failed:\n\tOwnernetwork:WE --- Not Matched with --- [AssetSource:Original, Distributor:\"Film Garden Entertainment, Inc. 1\", Title:Platinum Weddings: 04-006: Jaimie & Gregg, AMCNID:RLA169547.2, ShowType:Series, ProductionMode:Unscripted, Origin:Owned, SecurityStatus:Open, EditRestricted:Non Restricted (NR), EpisodeVersionType:Open, Ownernetwork:Open, Supplier:Miramax, EpisodeNumber:04-006, AiringOrder:402, ExpectedDuration:00:30:00]",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "abc95b213cc4ef4d",
+        "message" : "AssertionError: The following asserts failed:\n\tEpisodeVersionType:Platinum Weddings: 04-006: Jaimie & Gregg --- Not Matched with --- [AssetSource:Original, Distributor:\"Film Garden Entertainment, Inc. 1\", Title:Platinum Weddings: 04-006: Jaimie & Gregg, AMCNID:RLA169547.2, ShowType:Series, ProductionMode:Unscripted, Origin:Owned, SecurityStatus:Open, EditRestricted:Non Restricted (NR), EpisodeVersionType:Open, Ownernetwork:Open, Supplier:Miramax, EpisodeNumber:04-006, AiringOrder:402, ExpectedDuration:00:30:00]",
+        "status" : "FAILED"
+      } ]
     },
     "xunit" : {
       "totalCount" : 2,
       "items" : [ {
-        "uid" : "617ff4878be3a7e4",
+        "uid" : "d7c856ab2cdad6b2",
         "title" : "Suite : Test",
         "statistic" : {
           "total" : 1,
@@ -34,14 +49,14 @@
           "broken" : 0
         }
       }, {
-        "uid" : "f5fcd4574e57f21d",
+        "uid" : "3512517ea17baae1",
         "title" : "Suite : Testclasess",
         "statistic" : {
-          "total" : 7,
-          "passed" : 7,
+          "total" : 17,
+          "passed" : 14,
           "pending" : 0,
           "canceled" : 0,
-          "failed" : 0,
+          "failed" : 3,
           "broken" : 0
         }
       } ]
@@ -51,11 +66,11 @@
       "items" : [ {
         "title" : "Long Form Data Integration",
         "statistic" : {
-          "total" : 8,
-          "passed" : 8,
+          "total" : 18,
+          "passed" : 15,
           "pending" : 0,
           "canceled" : 0,
-          "failed" : 0,
+          "failed" : 3,
           "broken" : 0
         }
       } ]

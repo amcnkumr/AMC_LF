@@ -1,0 +1,80 @@
+{
+  "uid" : "66de626793200236",
+  "name" : "ValidateAssetSourceTest",
+  "title" : "Validate AssetSource Field",
+  "time" : {
+    "start" : 1597653438466,
+    "stop" : 1597653438467,
+    "duration" : 1
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 1
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "3512517ea17baae1",
+    "name" : "Suite : Testclasess",
+    "title" : "Suite : Testclasess"
+  },
+  "steps" : [ {
+    "name" : "logStep[WOP Data [ AssetSource:Original ] Matched With MP Data [ AssetSource:Original ] ]",
+    "title" : "WOP Data [ AssetSource:Original ] Matched With MP Data [ AssetSource:Original ] ",
+    "time" : {
+      "start" : 1597653438467,
+      "stop" : 1597653438467,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "testGroup",
+    "value" : "Testclasess"
+  }, {
+    "name" : "testClass",
+    "value" : "com.amc.Testclasess.execute.WOP_MPComparisionTest"
+  }, {
+    "name" : "story",
+    "value" : "WOP to MP Data Validations"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "thread",
+    "value" : "15244@MONO-HYD-LAP-41.main(1)"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Testclasess"
+  }, {
+    "name" : "testMethod",
+    "value" : "ValidateAssetSourceTest"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Testclasess"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "MONO-HYD-LAP-41"
+  }, {
+    "name" : "feature",
+    "value" : "Long Form Data Integration"
+  } ],
+  "parameters" : [ ]
+}

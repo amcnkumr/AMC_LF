@@ -2,39 +2,87 @@ package com.amc.txrepo;
 
 
 
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
+
 import com.amc.txbase.TxBase;
 
 public class WOP_MP_Comparision extends TxBase{
 	
+	SoftAssert sa = new SoftAssert();
 	
 	
 	// Comparing WOP to MP Data Validations:
 	
-	public void WOPtoMPDataComparisions() {
+	public void WOPtoMPDataComparisions(String param) {
 		
-		for(int i=0; i<TxBase.wopEpisodeVersionData.size(); i++) {
-			
-			for(int j=0; j<TxBase.mpEpisodeVersionData.size();j++) {
-						
-			if(TxBase.wopEpisodeVersionData.get(i).equalsIgnoreCase(TxBase.mpEpisodeVersionData.get(j))) {
+		
+
+		
+		String TestCaseParam=null;
+		 
+		 String wopFields=null;
+		 
+		 String mpFields = null;
+		 
+		 
+		 for(int i=0; i<wopEpisodeVersionData.size(); i++) {
 				
-				String wopEpisodeData = TxBase.wopEpisodeVersionData.get(i);
+				if (wopEpisodeVersionData.get(i).contains(param)) {
 				
-				String mpEpisodeData = TxBase.mpEpisodeVersionData.get(j);
-													
-			//logStep(String.format("WOP Data " + " [ " + wopEpisodeData + " ] " + " is Matched With " + " MP Episode Version Data " + " [ " + mpEpisodeData + " ] " ));
-							
-			logStep(String.format("WOP Data"+" [ " + wopEpisodeData + " ]"+" Matched With"+" MP Data"+" [ " + mpEpisodeData + " ] " ));
-			
-			//System.out.println("WOP Episode Version Data  " + " [ " + wopEpisodeData + " ] " + " is Matched With " + " MP Episode Version Data " + " [ " + mpEpisodeData + " ] " );
-			
-			System.out.println("WOP Data"+" [ " + wopEpisodeData + " ]"+" Matched With"+" MP Data"+" [ " + mpEpisodeData + " ] " );		
+					wopFields = wopEpisodeVersionData.get(i);
 					
 				}
-			
+				
+				TestCaseParam="Start";	
 			}
+		 
+		 
+		 for(int j=0; j<TxBase.mpEpisodeVersionData.size(); j++) {
+				
+				
+				if(wopFields.equalsIgnoreCase(mpEpisodeVersionData.get(j))) {
+					
+					mpFields = mpEpisodeVersionData.get(j);
+					
+					
+					if(wopFields.contains(param)) {
+
+						Assert.assertEquals(wopFields, mpFields);	
+
+						System.out.println("WOP Data"+" [ " + wopFields + " ]"+" Matched With"+" MP Data"+" [ " + mpFields + " ] " );	
+
+						logStep("WOP Data"+" [ " + wopFields + " ]"+" Matched With"+" MP Data"+" [ " + mpFields + " ] " );
+
+						TestCaseParam="Pass";
+						
+						break;
+						
+					}else {
+						
+						TestCaseParam="Fail";
+					}
+						
+						
+				}else {
+
+					TestCaseParam="Fail";
+				}
+					
+				if(TestCaseParam.equalsIgnoreCase("Fail")&&j==mpEpisodeVersionData.size()-1) {
+					
+					sa.fail(wopFields+" --- Not Matched with --- "+mpEpisodeVersionData.toString());
+				
+				}
+				
+			
+				
+				}
+				
+				sa.assertAll();		   
+		   
 		
-		}
+		
 	}
 	
 	

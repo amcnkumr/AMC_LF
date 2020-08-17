@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1597652994265" stop="1597653439403" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Suite : Test</name>
+    <title>Suite : Test</title>
+    <test-cases>
+        <test-case start="1597652996102" stop="1597653324171" status="passed">
+            <name>wopEpisodeVersionCreation</name>
+            <title>WOP Episode version Creation</title>
+            <steps>
+                <step start="1597653177257" stop="1597653177259" status="passed">
+                    <name>logStep[Episode Verison Creation is Success]</name>
+                    <title>Episode Verison Creation is Success</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1597653320166" stop="1597653320166" status="passed">
+                    <name>logStep[WOP Services Up And Running :RLA169547.2]</name>
+                    <title>WOP Services Up And Running :RLA169547.2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Testclasess"/>
+                <label name="testClass" value="com.amc.Testclasess.execute.WOPEpisodeVersionTest"/>
+                <label name="testMethod" value="wopEpisodeVersionCreation"/>
+                <label name="story" value="WOP"/>
+                <label name="feature" value="Long Form Data Integration"/>
+                <label name="host" value="MONO-HYD-LAP-41"/>
+                <label name="thread" value="15244@MONO-HYD-LAP-41.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

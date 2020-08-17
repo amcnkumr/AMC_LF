@@ -3,21 +3,13 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Testclasess(failed)">
     <classes>
-      <class name="com.amc.Testclasess.execute.DataBaseTest">
+      <class name="com.amc.Testclasess.execute.WOP_MPComparisionTest">
         <methods>
-          <include name="DataBaseConnectionTest"/>
+          <include name="ValidateEpisodeVersionTypeTest"/>
+          <include name="ValidateExpectedDurationTest"/>
+          <include name="ValidateOwnernetworkTest"/>
         </methods>
-      </class> <!-- com.amc.Testclasess.execute.DataBaseTest -->
-      <class name="com.amc.Testclasess.execute.RecordLocatorTest">
-        <methods>
-          <include name="recordSearchField"/>
-        </methods>
-      </class> <!-- com.amc.Testclasess.execute.RecordLocatorTest -->
-      <class name="com.amc.Testclasess.execute.MPEpisodeVerstionTest">
-        <methods>
-          <include name="MPEpisodeVersionTest"/>
-        </methods>
-      </class> <!-- com.amc.Testclasess.execute.MPEpisodeVerstionTest -->
+      </class> <!-- com.amc.Testclasess.execute.WOP_MPComparisionTest -->
     </classes>
   </test> <!-- Testclasess(failed) -->
 </suite> <!-- Failed suite [Suite] -->
